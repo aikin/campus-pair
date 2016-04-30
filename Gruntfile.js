@@ -4,13 +4,28 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    src: ['scss/**/*.scss'],
+                    cwd: 'scss',
+                    src: ['**/*.scss'],
                     dest: 'dist/stylesheet/',
                     ext: '.css'
                 }]
+            },
+            options: {
+                compress: false,
+                sourcemap: 'none'
+            }
+        },
+        watch: {
+            scss: {
+                files: ['scss/**/*.scss'],
+                tasks: ['sass'],
+                options: {
+                    spawn: false
+                }
             }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 };
