@@ -4,7 +4,7 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: 'scss',
+                    cwd: 'stylesheet/scss',
                     src: ['**/*.scss'],
                     dest: 'dist/stylesheet/',
                     ext: '.css'
