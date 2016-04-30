@@ -30,8 +30,26 @@
   background-position-x: 52%;
 }
 
-.section-item-whitespace-before {
+.section-item-text {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+.section-item-text-small {
+  font-size: 20px;
+}
+
+.section-item-bigWhitespace {
   margin-top: 60px;
+}
+
+.section-item-smallWhitespace {
+  margin-top: 20px;
+}
+
+.section-item-tinyWhitespace {
+  margin-top: 10px;
 }
 
 .thoughtworks-elements-background {
