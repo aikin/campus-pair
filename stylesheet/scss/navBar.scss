@@ -1,0 +1,21 @@
+.navBar {
+  border: solid 1px black;
+  height: 70px;
+}
+
+.navBar-item-container {
+  float: right;
+}
+
+.navBar-item {
+  display: inline-block;
+  width: 150px;
+  margin-top: 25px;
+
+  text-align: center;
+  font-size: 17px;
+}
+
+.navBar-item:last-of-type {
+  margin-right: 150px;
+}

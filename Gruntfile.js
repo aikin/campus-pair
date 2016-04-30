@@ -5,7 +5,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'stylesheet/scss',
-                    src: ['**/*.scss'],
+                    src: ['main.scss'],
                     dest: 'dist/stylesheet/',
                     ext: '.css'
                 }]
@@ -16,15 +16,9 @@ module.exports = function(grunt) {
             }
         },
         watch: {
-            options: {
-                livereload: true
-            },
             scss: {
                 files: ['stylesheet/scss/**/*.scss'],
-                tasks: ['sass'],
-                options: {
-                    spawn: false
-                }
+                tasks: ['sass']
             }
         }
     });
