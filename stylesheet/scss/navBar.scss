@@ -1,5 +1,11 @@
 .navBar {
   height: 70px;
+  padding-top: 25px;
+}
+
+.highNavBar {
+  height: 80px;
+  padding-top: 50px;
 }
 
 .navBar-item-container {
@@ -9,10 +15,13 @@
 .navBar-item {
   display: inline-block;
   width: 150px;
-  margin-top: 25px;
 
   text-align: center;
   font-size: 17px;
+}
+
+.navBar-item-white {
+  color: white;
 }
 
 .navBar-item:last-of-type {
