@@ -1,13 +1,15 @@
-.section {
+@mixin section {
   background-size: cover;
   background-position-x: 0;
 }
 
 .bigSection {
+  @include section;
   height: 650px;
 }
 
 .mediumSection {
+  @include section;
   height: 550px;
 }
 
@@ -22,7 +24,7 @@
 }
 
 
-.section-item-picture {
+.section-picture {
   height: 130px;
 
   background: no-repeat;
@@ -30,25 +32,31 @@
   background-position-x: 52%;
 }
 
-.section-item-text {
+
+@mixin section-text {
   text-align: center;
-  font-size: 25px;
   color: white;
 }
 
-.section-item-text-small {
+.section-mediumText {
+  @include section-text;
+  font-size: 25px;
+}
+
+.section-smallText {
+  @include section-text;
   font-size: 20px;
 }
 
-.section-item-bigWhitespace {
+.section-bigWhitespace {
   margin-top: 60px;
 }
 
-.section-item-smallWhitespace {
+.section-smallWhitespace {
   margin-top: 20px;
 }
 
-.section-item-tinyWhitespace {
+.section-tinyWhitespace {
   margin-top: 10px;
 }
 

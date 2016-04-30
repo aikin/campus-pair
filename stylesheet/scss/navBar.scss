@@ -1,18 +1,22 @@
-.navBar {
-  height: 70px;
-  padding-top: 25px;
+@mixin navBar {
+  height: 80px;
 }
 
 .highNavBar {
-  height: 80px;
+  @include navBar;
   padding-top: 50px;
 }
 
-.navBar-item-container {
+.mediumNavBar {
+  @include navBar;
+  padding-top: 25px;
+}
+
+.container-navBar-item {
   float: right;
 }
 
-.navBar-item {
+@mixin navBar-item {
   display: inline-block;
   width: 150px;
 
@@ -20,7 +24,13 @@
   font-size: 17px;
 }
 
-.navBar-item-white {
+.navBar-normalItem {
+  @include navBar-item;
+  color: #8e8e8e;
+}
+
+.navBar-whiteItem {
+  @include navBar-item;
   color: white;
 }
 
