@@ -9,14 +9,14 @@
 }
 
 //sections
-.bigSection {
-  @include section;
-  height: 650px;
-}
-
 .mediumSection {
   @include section;
-  height: 450px;
+  height: 700px;
+}
+
+.bigSection {
+  @include section;
+  height: 800px;
 }
 
 .hugeSection {
