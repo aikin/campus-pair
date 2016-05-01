@@ -1,34 +1,3 @@
-//picture
-.section-picture {
-  height: 130px;
-
-  background: no-repeat;
-  background-size: contain;
-  background-position-x: 52%;
-}
-
-//text
-@mixin section-text {
-  text-align: center;
-  color: white;
-}
-
-.section-mediumText {
-  @include section-text;
-  font-size: 25px;
-}
-
-.section-smallText {
-  @include section-text;
-  font-size: 20px;
-}
-
-.section-tinyText {
-  @include section-text;
-  font-size: 15px;
-}
-
-//entry
 .section-entry {
   height: 200px;
   width: 100%;
@@ -36,17 +5,18 @@
   color: white;
 }
 
-////entry icon
+//entry icon
 .section-entry-icon {
   width: 35%;
 }
-//////section entry icon caption
+////section entry icon caption
 .section-entry-icon-caption {
   float: right;
   width: 200px;
   text-align: center;
 }
-////entry text
+
+//entry text
 .section-entry-text {
   width: 65%;
   padding-left: 30px;

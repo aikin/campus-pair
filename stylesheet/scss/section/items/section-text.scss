@@ -1,0 +1,19 @@
+@mixin section-text {
+  text-align: center;
+  color: white;
+}
+
+.section-mediumText {
+  @include section-text;
+  font-size: 25px;
+}
+
+.section-smallText {
+  @include section-text;
+  font-size: 20px;
+}
+
+.section-tinyText {
+  @include section-text;
+  font-size: 15px;
+}
