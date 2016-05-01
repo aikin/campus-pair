@@ -16,7 +16,7 @@
 
 .mediumSection {
   @include section;
-  height: 550px;
+  height: 450px;
 }
 
 .hugeSection {
@@ -29,7 +29,7 @@
 .pair-programming-background {
   background-size: contain;
   background-image: url('../../images/the-game-of-pair.png');
-  background-position: 53% 40%;
+  background-position: 55% -20px;
 }
 //noinspection CssUnknownTarget,CssOptimizeSimilarProperties
 .sign-up-background {
