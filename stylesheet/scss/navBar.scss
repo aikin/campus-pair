@@ -2,6 +2,7 @@
   height: 80px;
 }
 
+//navBars
 .highNavBar {
   @include navBar;
   padding-top: 50px;
@@ -12,10 +13,12 @@
   padding-top: 25px;
 }
 
+//navBar container
 .container-navBar-item {
   float: right;
 }
 
+//navBar items
 @mixin navBar-item {
   display: inline-block;
   width: 150px;
