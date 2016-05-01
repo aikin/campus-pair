@@ -39,10 +39,12 @@
 ////entry icon
 .section-entry-icon {
   width: 35%;
-
-  text-align: right;
-  vertical-align: middle;
-  padding-right: 30px;
+}
+//////section entry icon caption
+.section-entry-icon-caption {
+  float: right;
+  width: 200px;
+  text-align: center;
 }
 ////entry text
 .section-entry-text {
