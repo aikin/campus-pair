@@ -1,0 +1,54 @@
+//picture
+.section-picture {
+  height: 130px;
+
+  background: no-repeat;
+  background-size: contain;
+  background-position-x: 52%;
+}
+
+//text
+@mixin section-text {
+  text-align: center;
+  color: white;
+}
+
+.section-mediumText {
+  @include section-text;
+  font-size: 25px;
+}
+
+.section-smallText {
+  @include section-text;
+  font-size: 20px;
+}
+
+.section-tinyText {
+  @include section-text;
+  font-size: 15px;
+}
+
+//entry
+.section-entry {
+  border: solid 1px white;
+  height: 200px;
+  width: 100%;
+
+  color: white;
+}
+
+////entry icon
+.section-entry-icon {
+  border: solid 1px white;
+  width: 35%;
+
+  text-align: right;
+  vertical-align: middle;
+}
+////entry text
+.section-entry-text {
+  border: solid 1px white;
+  width: 65%;
+}
+
+//entry icon background picture

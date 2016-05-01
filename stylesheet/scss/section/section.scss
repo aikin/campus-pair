@@ -1,0 +1,48 @@
+@mixin noMarginCollapse {
+  padding-top: 1px;
+  margin-top: -1px;
+}
+
+@mixin section {
+  @include noMarginCollapse;
+  background-repeat: no-repeat;
+}
+
+//sections
+.bigSection {
+  @include section;
+  height: 650px;
+}
+
+.mediumSection {
+  @include section;
+  height: 550px;
+}
+
+.hugeSection {
+  @include section;
+  height: 1200px;
+}
+
+//background picture or colors
+//noinspection CssUnknownTarget,CssOptimizeSimilarProperties
+.pair-programming-background {
+  background-size: contain;
+  background-image: url('../../images/the-game-of-pair.png');
+  background-position: 53% 40%;
+}
+//noinspection CssUnknownTarget,CssOptimizeSimilarProperties
+.sign-up-background {
+  background-size: cover;
+  background-image: url('../../images/sign-up.png');
+  background-position: 0 35%;
+}
+
+.activity-process-background {
+  background-color: #0AB0C5;
+}
+//noinspection CssUnknownTarget,CssOptimizeSimilarProperties
+.thoughtworks-elements-background {
+  background-image: url('../../images/thoughtworks-elements.png');
+  background-position-y: 50%;
+}
