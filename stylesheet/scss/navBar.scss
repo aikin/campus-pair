@@ -16,7 +16,7 @@
 //navBar container
 .container-navBar-item {
   float: right;
-  margin-right: 3%;
+  margin-right: 5%;
 }
 
 //navBar items
@@ -32,9 +32,17 @@
   cursor: pointer;
 }
 
+@mixin animatedFadeOut {
+  transition-duration: 0.2s;
+  opacity: 0.9;
+}
+
 .navBar-normalItem {
   @include navBar-item;
   color: #8e8e8e;
+}
+.navBar-normalItem:hover {
+  @include animatedFadeOut;
 }
 
 .navBar-purpleFramedItem {
@@ -52,6 +60,9 @@
   @include navBar-item;
   color: white;
 }
+.navBar-whiteItem:hover {
+  @include animatedFadeOut;
+}
 
 .navBar-whiteFramedItem {
   @include navBar-item;
@@ -63,8 +74,4 @@
   background-color: white;
   color: black;
   mix-blend-mode: screen;
-}
-
-.navBar-item:last-of-type {
-  margin-right: 50px;
 }
