@@ -22,7 +22,10 @@
 //navBar items
 @mixin navBar-item {
   display: inline-block;
-  width: 150px;
+  width: 105px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: 20px;
 
   text-align: center;
   font-size: 17px;
@@ -33,9 +36,21 @@
   color: #8e8e8e;
 }
 
+.navBar-purpleFramedItem {
+  @include navBar-item;
+  color: #CB6B93;
+  border: solid 1px #CB6B93;
+}
+
 .navBar-whiteItem {
   @include navBar-item;
   color: white;
+}
+
+.navBar-whiteFramedItem {
+  @include navBar-item;
+  color: white;
+  border: solid 1px white;
 }
 
 .navBar-item:last-of-type {
