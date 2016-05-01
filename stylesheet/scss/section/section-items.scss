@@ -30,7 +30,6 @@
 
 //entry
 .section-entry {
-  border: solid 1px white;
   height: 200px;
   width: 100%;
 
@@ -39,16 +38,24 @@
 
 ////entry icon
 .section-entry-icon {
-  border: solid 1px white;
   width: 35%;
 
   text-align: right;
   vertical-align: middle;
+  padding-right: 30px;
 }
 ////entry text
 .section-entry-text {
-  border: solid 1px white;
   width: 65%;
+  padding-left: 30px;
+  padding-right: 200px;
 }
 
 //entry icon background picture
+//noinspection CssUnknownTarget,CssOptimizeSimilarProperties
+.activity-one-icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../../images/activity-one.png');
+  background-position: 100% 0;
+}
