@@ -77,6 +77,29 @@
   font-size: 15px;
 }
 
+////section entry items
+.section-entry {
+  border: solid 1px white;
+  height: 200px;
+  width: 100%;
+
+  color: white;
+}
+
+//////section entry icon container
+.container-section-entry-icon {
+  border: solid 1px white;
+  width: 35%;
+
+  text-align: right;
+  vertical-align: middle;
+}
+//////section entry text container
+.container-section-entry-text {
+  border: solid 1px white;
+  width: 65%;
+}
+
 ////whitespace decorators
 .section-bigWhitespace {
   margin-top: 60px;
