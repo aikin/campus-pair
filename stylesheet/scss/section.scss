@@ -49,8 +49,17 @@
   font-size: 20px;
 }
 
+.section-tinyText {
+  @include section-text;
+  font-size: 15px;
+}
+
 .section-bigWhitespace {
   margin-top: 60px;
+}
+
+.section-mediumWhitespace {
+  margin-top: 40px;
 }
 
 .section-smallWhitespace {
