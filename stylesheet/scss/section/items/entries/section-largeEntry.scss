@@ -3,32 +3,32 @@
   width: 100%;
 }
 
-.section-entry-wideIcon {
+.section-largeEntry-icon {
   width: 56%;
 }
 
-.section-entry-icon-img {
+.section-largeEntry-icon-img {
   float: right;
 }
 
-.section-entry-narrowText {
+.section-largeEntry-text {
   width: 44%;
   padding-left: 30px;
 }
 
 
 @media (max-width: 1060px) {
-  .section-entry-wideIcon {
+  .section-largeEntry-icon {
     display: block;
     width: 100%
   }
 
-  .section-entry-icon-img {
+  .section-largeEntry-icon-img {
     float: none;
     width: 100%;
   }
 
-  .section-entry-narrowText {
+  .section-largeEntry-text {
     display: block;
     width: auto;
     padding-left: 5%;
@@ -37,7 +37,7 @@
 }
 
 @media (max-width: 950px) {
-  .section-entry-narrowText {
+  .section-largeEntry-text {
     padding-top: 50px;
   }
 }
