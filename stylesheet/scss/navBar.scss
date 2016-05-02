@@ -1,16 +1,11 @@
-@mixin navBar {
-  height: 80px;
-}
-
 //navBars
-.highNavBar {
-  @include navBar;
-  padding-top: 50px;
-}
-
-.mediumNavBar {
-  @include navBar;
+.navBar {
+  height: 60px;
   padding-top: 25px;
+
+  background-color: white;
+  position: fixed;
+  width: 100%;
 }
 
 //navBar container
@@ -54,24 +49,4 @@
   transition-duration: 0.2s;
   color: white;
   background-color: #CB6B93;
-}
-
-.navBar-whiteItem {
-  @include navBar-item;
-  color: white;
-}
-.navBar-whiteItem:hover {
-  @include animatedFadeOut;
-}
-
-.navBar-whiteFramedItem {
-  @include navBar-item;
-  color: white;
-  border: solid 1px white;
-}
-.navBar-whiteFramedItem:hover {
-  transition-duration: 0.2s;
-  background-color: white;
-  color: black;
-  mix-blend-mode: screen;
 }
