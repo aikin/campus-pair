@@ -1,12 +1,23 @@
-.section-picture {
-  height: 130px;
-
+@mixin section-picture {
   background: no-repeat;
   background-size: contain;
   background-position-x: 52%;
 }
 
+.section-mediumPicture {
+  @include section-picture;
+  height: 130px;
+}
+
+.section-bigPicture {
+  @include section-picture;
+  height: 200px;
+}
+
 .thoughtworks-elements-background {
   background-image: url('../../images/thoughtworks-elements.png');
-  background-position-y: 50%;
+}
+
+.thoughtworks-logo-background {
+  background-image: url('../../images/thoughtworks-logo.png');
 }
