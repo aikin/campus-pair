@@ -33,11 +33,18 @@
     width: auto;
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .section-largeEntry-text {
+    padding-top: 60px;
   }
 }
 
 @media (max-width: 950px) {
   .section-largeEntry-text {
-    padding-top: 50px;
+    padding-top: 90px;
   }
 }
