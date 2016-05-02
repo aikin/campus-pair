@@ -1,0 +1,43 @@
+.section-largeEntry {
+  height: 300px;
+  width: 100%;
+}
+
+.section-entry-wideIcon {
+  width: 56%;
+}
+
+.section-entry-icon-img {
+  float: right;
+}
+
+.section-entry-narrowText {
+  width: 44%;
+  padding-left: 30px;
+}
+
+
+@media (max-width: 1060px) {
+  .section-entry-wideIcon {
+    display: block;
+    width: 100%
+  }
+
+  .section-entry-icon-img {
+    float: none;
+    width: 100%;
+  }
+
+  .section-entry-narrowText {
+    display: block;
+    width: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 950px) {
+  .section-entry-narrowText {
+    padding-top: 50px;
+  }
+}

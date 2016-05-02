@@ -50,3 +50,10 @@
 .city-sign-up-background {
   background-color: #A9084D;
 }
+
+@media (max-width: 1060px) {
+  .mediumSection {
+    @include section;
+    height: 1000px;
+  }
+}
