@@ -1,28 +1,7 @@
-@mixin section-text {
+.section-text {
   text-align: center;
-  color: white;
 }
-@mixin section-leftAlignedText{
+
+.section-leftAlignedText{
   text-align: left;
-  color: white;
-}
-
-.section-mediumText {
-  @include section-text;
-  font-size: 25px;
-}
-
-.section-smallText {
-  @include section-text;
-  font-size: 20px;
-}
-
-.section-tinyText {
-  @include section-text;
-  font-size: 15px;
-}
-
-.section-tinyLeftAlignedText {
-  @include section-leftAlignedText;
-  font-size: 15px;
 }
