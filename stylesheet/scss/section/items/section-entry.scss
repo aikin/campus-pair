@@ -3,14 +3,25 @@
   width: 100%;
 }
 
+.section-largeEntry {
+  height: 300px;
+  width: 100%;
+}
+
 //entry icon
 .section-entry-icon {
   width: 37%;
+}
+.section-entry-wideIcon {
+  width: 54%;
 }
 .section-entry-icon-caption {
   float: right;
   width: 200px;
   text-align: center;
+}
+.section-entry-icon-img {
+  float: right;
 }
 
 //entry text
@@ -18,9 +29,17 @@
   width: 63%;
   padding-left: 40px;
 }
+.section-entry-narrowText {
+  width: 46%;
+  padding-left: 30px;
+}
 .section-entry-text-content {
   width: 550px;
 }
+.section-entry-narrowText-content {
+  width: 400px;
+}
+
 
 //entry icon background picture
 @mixin section-entry-icon-background{
