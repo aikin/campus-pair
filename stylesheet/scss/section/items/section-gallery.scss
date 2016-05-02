@@ -20,28 +20,28 @@
 @mixin section-gallery-item-background {
   background: no-repeat;
 }
-//noinspection CssUnknownTarget, CssOptimizeSimilarProperties
+
 .beijing-background {
   @include section-gallery-item-background;
   background-image: url("../../images/beijing.png");
   background-size: 70%;
   background-position: 50% 10%;
 }
-//noinspection CssUnknownTarget, CssOptimizeSimilarProperties
+
 .xian-background {
   @include section-gallery-item-background;
   background-image: url("../../images/xian.png");
   background-size: 80%;
   background-position: 50% 10%;
 }
-//noinspection CssUnknownTarget, CssOptimizeSimilarProperties
+
 .chengdu-background {
   @include section-gallery-item-background;
   background-image: url("../../images/chengdu.png");
   background-size: 55%;
   background-position: 50% 20%;
 }
-//noinspection CssUnknownTarget, CssOptimizeSimilarProperties
+
 .wuhan-background {
   @include section-gallery-item-background;
   background-image: url("../../images/wuhan.png");
