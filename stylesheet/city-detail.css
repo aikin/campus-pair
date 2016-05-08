@@ -1,0 +1,264 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background-color: #000000;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+body {
+    background-color: #b4b4b4;
+    color: #787878;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    background-color: #fff;
+}
+
+.parallax {
+    height: 600px;
+    background: url("../images/pair-background.png") no-repeat fixed 50% 30%;
+    background-size: cover;
+}
+
+.parallax-wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.parallax-wrapper__content--beijing {
+    height: 600px;
+    background: url("../images/beijing/game-pair-in-beijing.png") no-repeat 50% 50%;
+    background-size: contain;
+}
+
+.parallax-wrapper__content--chengdu {
+    height: 600px;
+    background: url("../images/chengdu/game-pair-in-chengdu.png") no-repeat 50% 50%;
+    background-size: contain;
+}
+
+.parallax-content {
+    height: 100%;
+    background: url("../images/pair-background.png") no-repeat;
+    background-size: cover  ;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+
+.heroes-show {
+    /*padding-top: 30px;*/
+    font-size: 0;
+}
+
+.heroes-wall-two {
+    display: inline-block;
+    width: 40%;
+}
+
+.heroes-wall-one {
+    display: inline-block;
+    width: 20%;
+    padding: 0 6px;
+}
+
+.heroes-wall-long {
+    display: inline-block;
+    width: 60%;
+    padding: 0 6px 0 0;
+}
+
+.heroes__row {
+    margin-bottom: 6px;
+    overflow: hidden;
+}
+
+.hero {
+    display: inline-block;
+    height: 10em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-filter: grayscale(60%);
+    -moz-filter: grayscale(60%);
+    -o-filter: grayscale(60%);
+    filter: grayscale(60%);
+}
+
+.hero:last-child {
+    margin-right: 0;
+}
+
+.hero--lvjing {
+    background-image: url("../images/chengdu/lvjing.jpg");
+    width: 100%;
+}
+
+.hero--bear {
+    background-image: url("../images/chengdu/bear.jpg");
+    width: 50%;
+    display: block;
+    float: left;
+    padding-right: 3px;
+}
+
+.hero--weizhaoyu {
+    background-image: url("../images/chengdu/weizhaoyu.jpeg");
+    width: 50%;
+    display: block;
+    float: right;
+    padding-left: 3px;
+}
+
+.hero--linshuiqiang {
+    background-image: url("../images/chengdu/linshuiqiang.png");
+    width: 100%;
+}
+
+.hero--chenjia {
+    background-image: url("../images/chengdu/chengjia.png");
+    width: 50%;
+    display: block;
+    float: left;
+    padding-right: 3px;
+}
+
+.hero--huangbowen {
+    background-image: url("../images/chengdu/huangbowen.png");
+    width: 50%;
+    display: block;
+    float: right;
+    padding-left: 3px;
+}
+
+.hero--dengyunlong {
+    background-image: url("../images/chengdu/dengyunlong.jpg");
+    width: 100%;
+}
+
+
+
+.hero--zhaxi {
+    background-image: url("../images/chengdu/zhaxi.jpeg");
+    width:100%;
+}
+
+.hero--zhaoming {
+    background-image: url("../images/chengdu/zhaoming.jpg");
+    width: 100%;
+}
+
+.hero--liujiefeng {
+    width: 100%;
+    background-image: url("../images/chengdu/liujiefeng.jpeg");
+    background-position: 50% 68%;
+}
+
+.hero--dingmengli {
+    width: 100%;
+    background-image: url("../images/chengdu/dingmengli.jpg");
+}
+
+
+.hero--luoli {
+    background-image: url("../images/chengdu/louli.jpg");
+    width: 100%;
+    background-position: 20% 50%;
+}
+
+.hero--fuluoyu {
+    background-image: url("../images/chengdu/fuluoyu.jpg");
+    width: 100%;
+    background-position: 50% 16%;
+}
+
+.wall_row-box__photo {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    -webkit-filter: grayscale(60%);
+    -moz-filter: grayscale(60%);
+    -o-filter: grayscale(60%);
+    filter: grayscale(60%);
+}
+
+.hero-detail {
+    display: inline-block;
+    width: 40%;
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 240px;
+    width: 70%;
+    background-color: #A9084D;
+    display: none;
+}
