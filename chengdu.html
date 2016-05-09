@@ -2,81 +2,255 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ChengDu</title>
+    <title>chengdu</title>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta content="width=device-width,initial-scale=1.0" name="viewport">
 
+    <link rel="stylesheet" href="stylesheet/normalize.css">
+    <link rel="stylesheet" href="stylesheet/main.css">
+    <link rel="stylesheet" href="stylesheet/jquery.modal.min.css">
     <link rel="stylesheet" href="stylesheet/city-detail.css">
-    <script type="text/javascript" src="lib/modernizr.js"></script>
+
 </head>
 <body>
 
 <div class="container">
     <section class="parallax">
         <div class="parallax-wrapper">
-            <div class="parallax-wrapper__content--chengdu">
-            </div>
+            <img src="./images/chengdu/game-pair-in-chengdu.png" class="parallax-wrapper__content--chengdu">
         </div>
     </section>
 
     <section class="parallax-content">
         <div class="parallax-wrapper heroes-show">
-            <div class="heroes-wall-two">
-                <div class="heroes__row">
-                    <div class="hero long-hero hero--lvjing"></div>
-                </div>
-                <div class="heroes__row">
-                    <div class="hero hero--bear"></div>
-                    <div class="hero hero--weizhaoyu"></div>
-                </div>
-                <div class="heroes__row">
-                    <div class="hero long-hero hero--linshuiqiang"></div>
-                </div>
-                <div class="heroes__row">
-                <!--<div class="hero long-hero hero&#45;&#45;fuluoyu"></div>-->
-                    <div class="hero hero--huangbowen"></div>
-                    <div class="hero long-hero hero--chenjia"></div>
-                </div>
-                <div class="heroes__row">
-                    <div class="hero long-hero hero--dengyunlong"></div>
-                </div>
+            <div class="heroes-wall">
+                <ul id="container" class="tiles-wrap">
+                    <li><img id="lvjing" src="./images/chengdu/lvjing.jpg"></li>
+                    <li><img id="zhaxi" src="./images/chengdu/zhaxi.jpeg"></li>
+                    <li><img id="bear" src="./images/chengdu/bear.jpg"></li>
+                    <li><img id="weizhaoyu" src="./images/chengdu/weizhaoyu.jpeg"></li>
+                    <li><img id="zhaoming" src="./images/chengdu/zhaoming.jpg"></li>
+                    <li><img id="dengyunlong" src="./images/chengdu/dengyunlong.jpg"></li>
+                    <li><img id="chengjia" src="./images/chengdu/chengjia.png"></li>
+                    <li><img id="linshuiqiang" src="./images/chengdu/linshuiqiang.jpg"></li>
+                    <li><img id="liujiefeng" src="./images/chengdu/liujiefeng.jpeg"></li>
+                    <li><img id="huangbowen" src="./images/chengdu/huangbowen.png"></li>
+                    <li><img id="dingmengli" src="./images/chengdu/dingmengli.jpg"></li>
+                    <li><img id="fuluoyu" src="./images/chengdu/fuluoyu.jpg"></li>
+                    <li><img id="louli" src="./images/chengdu/louli.jpg"></li>
+                </ul>
             </div>
-            <div class="heroes-wall-one">
-                <div class="heroes__row">
-                    <div class="hero hero--zhaxi"></div>
-                </div>
-                <div class="heroes__row">
-                    <div class="hero hero--zhaoming"></div>
-                </div>
-                <div class="heroes__row">
-                    <div class="hero hero--liujiefeng"></div>
-                </div>
-                <div class="heroes__row">
-                    <div class="hero hero--dingmengli"></div>
-                </div>
-                <div class="heroes__row">
-                    <div class="hero hero--luoli"></div>
-                </div>
-            </div>
-            <div class="heroes-wall-long">
-                <div class="heroes__row">
-                    <div class="hero hero--fuluoyu"></div>
-                </div>
-            </div>
-            <!--<div class="photo-show">-->
-                <!--<div class="photo-box">-->
-                    <!--<img src="./images/beijing/renjing.png"  class="box__content">-->
-                <!--</div>-->
-                <!--<div class="intro-container">-->
-                    <!--<div class="intro__content"></div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <div class="modal">
-
+            <div class="hero-show">
             </div>
         </div>
     </section>
 </div>
+<div id="dojo" class="modal" style="display:none;">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
 
+<script type="text/javascript" src="lib/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="lib/wookmark.min.js"></script>
+<script type="text/javascript" src="lib/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="lib/jquery.modal.min.js"></script>
+<script type="text/javascript" src="lib/modernizr.js"></script>
+<script type="text/javascript">
+    $(function() {
+        (function () {
+            function getWindowWidth() {
+                return Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+            }
+
+            var wookmark;
+            imagesLoaded('#container', function () {
+                wookmark = new Wookmark('#container', {
+                    itemWidth: "20%",
+                    outerOffset: 20,
+                    flexibleWidth: function () {
+                        return getWindowWidth() < 1024 ? '100%' : '50%';
+                    },
+                    autoResize: true
+                });
+            });
+        })();
+
+        $('#container').find('img').hover(function(event) {
+            $("img").removeClass("hover");
+            $(this).addClass("hover");
+            $('.hero-show').html($('#hero-' + $(this).attr('id')).html());
+
+        });
+
+        $('.heroes-wall img').click(function () {
+            event.preventDefault();
+            $("#dojo").modal();
+        });
+
+        $('#lvjing').trigger("mouseenter").addClass("hover");
+    });
+</script>
+
+<script type="text/html" id="hero-lvjing">
+    <div class="hero hero--lvjing">
+    </div>
+    <div class="intro">
+        <h3>男神大名 : 吕靖</h3>
+        <p>江湖名号 立青 & Jimmy</p>
+        <p>名号由来 立青 => 靖 => Jing => Jim => Jimmy</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>你过去所经历的__，和你将来想要实现的__，共同成就了现在的你。</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>ThoughtWorks，影响程序员，引领软件行业，就是改变整个世界！</p>
+    </div>
+</script>
+<script type="text/html" id="hero-zhaxi">
+    <div class="hero hero--zhaxi">
+    </div>
+    <div class="intro">
+        <h3>男神大名 : 格茸扎西</h3>
+        <p>江湖名号 狼主</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>Talk is cheap，show me the code.</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>At ThoughtWorks，your ideas come true.</p>
+    </div>
+</script>
+<script type="text/html" id="hero-bear">
+    <div class="hero hero--bear">
+    </div>
+    <div class="intro">
+        <h3>男神大名 : Aleksandar Serafimoski</h3>
+        <p>江湖名号 Bearclaw</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>Join ThoughtWorks, so you can meet a lot of cool people and travel to many interesting places!</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>ThoughtWorks is a very special place. There is a lot of fun smart people and you get to work with them every day. You can learn a lot while having fun!</p>
+    </div>
+</script>
+<script type="text/html" id="hero-weizhaoyu">
+    <div class="hero hero--weizhaoyu">
+    </div>
+    <div class="intro">
+        <h3>女神大名 : 魏兆玉</h3>
+        <p>江湖名号 Zhaoyu</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>日精进。</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>追求技术卓越，追求社会公正！</p>
+    </div>
+</script>
+<script type="text/html" id="hero-zhaoming">
+    <div class="hero hero--zhaoming">
+    </div>
+    <div class="intro">
+        <h3>男神大名 : 赵明</h3>
+        <p>江湖名号 小明</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>给予自己负责的原则，做你想做的事情。</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>编程有益身心健康！</p>
+    </div>
+</script>
+<script type="text/html" id="hero-chengjia">
+    <div class="hero hero--chengjia">
+    </div>
+    <div class="intro">
+        <h3>男神大名 : 陈嘉</h3>
+        <p>江湖名号 areschen</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>加入ThoughtWorks，成就你的梦想！</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>ThoughtWorks，where thought works！</p>
+    </div>
+</script>
+<script type="text/html" id="hero-linshuiqiang">
+    <div class="hero hero--linshuiqiang">
+    </div>
+    <div class="intro">
+        <h3>男神大名 : 林水强</h3>
+        <p>江湖名号 Waterstrong</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>满腔热血的少年们，加入ThoughtWorks成就你的非凡！</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>ThoughtWorks, 一个来了就会爱上的地方。</p>
+    </div>
+</script>
+<script type="text/html" id="hero-dengyunlong">
+    <div class="hero hero--dengyunlong">
+    </div>
+    <div class="intro">
+        <h3>男神大名 : 郑云龙</h3>
+        <p>江湖名号 云龙</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>这里有无限可能！</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>ThoughtWorks的特产：干货！</p>
+    </div>
+</script>
+<script type="text/html" id="hero-dingmengli">
+    <div class="hero hero--dingmengli">
+    </div>
+    <div class="intro">
+        <h3>女神大名 : 丁梦力</h3>
+        <p>江湖名号 Power</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>骚窝，温暖，温情，快到碗里来！</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>有激情，有技术的精英聚集地！</p>
+    </div>
+</script>
+<script type="text/html" id="hero-fuluoyu">
+    <div class="hero hero--fuluoyu">
+    </div>
+    <div class="intro">
+        <h3>男神大名 : 傅若愚</h3>
+        <p>江湖名号 这家伙很懒，什么都没有留下……其实也没那么懒啦，只是个爱睡懒觉爱喝啤酒的17岁小鲜肉啦。艺名什么的，真的没有啊……</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>小伙伴们快来一起愉快地玩耍！</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>一个可以让你得到真正成长的地方。</p>
+    </div>
+</script>
+<script type="text/html" id="hero-huangbowen">
+    <div class="hero hero--huangbowen">
+    </div>
+    <div class="intro">
+        <h3>男神大名 : 黄博文</h3>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>Today I will do what others won’t! So tomorrow I can accomplish what others can’t!</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>ThoughtWorks助你成就非凡使命!</p>
+    </div>
+</script>
+<script type="text/html" id="hero-liujiefeng">
+    <div class="hero hero--liujiefeng">
+    </div>
+    <div class="intro">
+        <h3>女神大名 : 刘杰凤</h3>
+        <p>江湖名号 姐夫</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>来来来，写代码～</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>很多活动，很多挑战，很多机会。</p>
+    </div>
+</script>
+<script type="text/html" id="hero-louli">
+    <div class="hero hero--louli">
+    </div>
+    <div class="intro">
+        <h3>女神大名 : 罗丽</h3>
+        <p>江湖名号 LOLI</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>我只希望自己遇见骚窝的时候, 也是你们这般年纪。</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>这是片思维迸发的沃土。</p>
+    </div>
+</script>
 </body>
 </html>

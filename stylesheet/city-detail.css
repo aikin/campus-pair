@@ -1,46 +1,3 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-    background-color: #000000;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-blockquote, q {
-    quotes: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
 *,
 *:before,
 *:after {
@@ -64,6 +21,31 @@ body {
     line-height: 1.5;
 }
 
+.tiles-wrap li {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.tiles-wrap li img.hover {
+    background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
+    opacity: 1;
+
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.tiles-wrap li img {
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+}
+
+/*.tiles-wrap:hover li:not(:hover) {*/
+    /*opacity: 0.4;*/
+/*}*/
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -72,35 +54,35 @@ body {
 }
 
 .parallax {
-    height: 600px;
-    background: url("../images/pair-background.png") no-repeat fixed 50% 30%;
-    background-size: cover;
+    height: 100vh;
+    background: url("../images/pair-background.png") no-repeat fixed;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.parallax-content {
+    height: 100vh;
+    background: url("../images/pair-background.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .parallax-wrapper {
-    width: 100%;
-    max-width: 960px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 10px;
 }
 
-.parallax-wrapper__content--beijing {
-    height: 600px;
-    background: url("../images/beijing/game-pair-in-beijing.png") no-repeat 50% 50%;
-    background-size: contain;
-}
-
 .parallax-wrapper__content--chengdu {
-    height: 600px;
-    background: url("../images/chengdu/game-pair-in-chengdu.png") no-repeat 50% 50%;
-    background-size: contain;
+    height: auto;
+    width: 60%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
-.parallax-content {
-    height: 100%;
-    background: url("../images/pair-background.png") no-repeat;
-    background-size: cover  ;
-}
 
 section:last-child {
     margin-bottom: 0;
@@ -108,157 +90,124 @@ section:last-child {
 
 
 .heroes-show {
-    /*padding-top: 30px;*/
-    font-size: 0;
-}
-
-.heroes-wall-two {
-    display: inline-block;
-    width: 40%;
-}
-
-.heroes-wall-one {
-    display: inline-block;
-    width: 20%;
-    padding: 0 6px;
-}
-
-.heroes-wall-long {
-    display: inline-block;
-    width: 60%;
-    padding: 0 6px 0 0;
-}
-
-.heroes__row {
-    margin-bottom: 6px;
     overflow: hidden;
+    color: #FFF;
+    font-size: 1em;
+}
+
+
+.heroes-wall {
+    float: left;
+    width: 55%;
+}
+
+.hero-show {
+    padding-top: 22px;
+    padding-right: 10px;
+    float: right;
+    width: 44%;
 }
 
 .hero {
-    display: inline-block;
-    height: 10em;
+    width: 100%;
+    height: 140px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-origin: content-box;
-    font-size: 16px;
-    cursor: pointer;
-    -webkit-filter: grayscale(60%);
-    -moz-filter: grayscale(60%);
-    -o-filter: grayscale(60%);
-    filter: grayscale(60%);
-}
-
-.hero:last-child {
-    margin-right: 0;
+    background-position: 50% 20%;
 }
 
 .hero--lvjing {
     background-image: url("../images/chengdu/lvjing.jpg");
-    width: 100%;
+}
+
+.hero--zhaxi {
+    background-image: url("../images/chengdu/zhaxi-long.jpg");
 }
 
 .hero--bear {
-    background-image: url("../images/chengdu/bear.jpg");
-    width: 50%;
-    display: block;
-    float: left;
-    padding-right: 3px;
+    background-image: url("../images/chengdu/bear-long.jpg");
 }
 
 .hero--weizhaoyu {
-    background-image: url("../images/chengdu/weizhaoyu.jpeg");
-    width: 50%;
-    display: block;
-    float: right;
-    padding-left: 3px;
+    background-image: url("../images/chengdu/weizhaoyu-long.jpg");
+}
+
+.hero--zhaoming {
+    background-image: url("../images/chengdu/zhaoming-long.jpg");
+}
+
+.hero--chengjia {
+    background-image: url("../images/chengdu/chengjia-long.jpg");
 }
 
 .hero--linshuiqiang {
-    background-image: url("../images/chengdu/linshuiqiang.png");
-    width: 100%;
-}
-
-.hero--chenjia {
-    background-image: url("../images/chengdu/chengjia.png");
-    width: 50%;
-    display: block;
-    float: left;
-    padding-right: 3px;
-}
-
-.hero--huangbowen {
-    background-image: url("../images/chengdu/huangbowen.png");
-    width: 50%;
-    display: block;
-    float: right;
-    padding-left: 3px;
+    background-image: url("../images/chengdu/linshuiqiang.jpg");
 }
 
 .hero--dengyunlong {
     background-image: url("../images/chengdu/dengyunlong.jpg");
-    width: 100%;
-}
-
-
-
-.hero--zhaxi {
-    background-image: url("../images/chengdu/zhaxi.jpeg");
-    width:100%;
-}
-
-.hero--zhaoming {
-    background-image: url("../images/chengdu/zhaoming.jpg");
-    width: 100%;
-}
-
-.hero--liujiefeng {
-    width: 100%;
-    background-image: url("../images/chengdu/liujiefeng.jpeg");
-    background-position: 50% 68%;
 }
 
 .hero--dingmengli {
-    width: 100%;
-    background-image: url("../images/chengdu/dingmengli.jpg");
-}
-
-
-.hero--luoli {
-    background-image: url("../images/chengdu/louli.jpg");
-    width: 100%;
-    background-position: 20% 50%;
+    background-image: url("../images/chengdu/dingmengli-long.jpg");
 }
 
 .hero--fuluoyu {
     background-image: url("../images/chengdu/fuluoyu.jpg");
-    width: 100%;
-    background-position: 50% 16%;
 }
 
-.wall_row-box__photo {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    -webkit-filter: grayscale(60%);
-    -moz-filter: grayscale(60%);
-    -o-filter: grayscale(60%);
-    filter: grayscale(60%);
+.hero--huangbowen {
+    background-image: url("../images/chengdu/huangbowen-long.jpg");
 }
 
-.hero-detail {
-    display: inline-block;
-    width: 40%;
+.hero--liujiefeng {
+    background-image: url("../images/chengdu/liujiefeng-long.jpg");
 }
 
-.modal {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 240px;
-    width: 70%;
-    background-color: #A9084D;
-    display: none;
+.hero--louli {
+    background-image: url("../images/chengdu/louli.jpg");
 }
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 1100px) {
+    .hero-show {
+        display: none;
+    }
+
+    .heroes-wall {
+        width: 100%;
+        float: none;
+    }
+
+    .container {
+        height: 100vh;
+    }
+
+    .parallax {
+        background-size: 100% 100%;
+        background-attachment: inherit;
+        min-height: 300px;
+        height: 50%;
+    }
+
+    .parallax-wrapper {
+        text-align: center;
+    }
+
+    .parallax-content {
+        min-height: 50%;
+        height: auto;
+    }
+
+    .modal {
+        width: auto;
+    }
+}
+
+/*-webkit-filter: grayscale(60%);*/
+/*-moz-filter: grayscale(60%);*/
+/*-o-filter: grayscale(60%);*/
+/*filter: grayscale(60%);*/
