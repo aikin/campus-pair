@@ -130,57 +130,7 @@
 <script type="text/javascript" src="lib/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="lib/jquery.modal.min.js"></script>
 <script type="text/javascript" src="lib/modernizr.js"></script>
-<script type="text/javascript">
-    $(function () {
-        function getWindowWidth() {
-            return Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
-        }
-
-        var wookmark;
-
-        $('#container').imagesLoaded()
-                .done(function (instance) {
-                    wookmark = new Wookmark('#container', {
-                        itemWidth: function () {
-                            if (getWindowWidth() < 768) return "100%";
-                            return getWindowWidth() < 960 ? '40%' : '24%'
-                        },
-                        outerOffset: 20,
-                        flexibleWidth: true,
-                        autoResize: true,
-                        onLayoutChanged: function () {
-                            var $hero = $('.hero--tint');
-                            if (getWindowWidth() < 960) {
-                                $('.hero--tint').removeClass('hover');
-                                $hero.click(function () {
-                                    event.preventDefault();
-                                    $("#dojo").modal();
-                                }).unbind('mouseenter mouseleave');
-                                $('.submit').addClass('hide');
-                                return
-                            }
-                            $hero.hover(function () {
-                                $('.hero--tint').removeClass('hover');
-                                $(this).addClass('hover');
-                                $('.hero-show .detail').html($('#hero-' + $(this).children('img').attr('id')).html());
-                            }).unbind('click');
-                            $('#weizhaoyu')
-                                    .trigger('mouseenter')
-                                    .addClass('hover');
-                            $('.submit').removeClass('hide');
-                        }
-                    });
-                    setTimeout(function () {
-                        $('#weizhaoyu')
-                                .trigger('mouseenter')
-                                .addClass('hover');
-                        $('.submit').removeClass('hide');
-                    }, 1000);
-                });
-
-
-    });
-</script>
+<script type="text/javascript" src="js/start.js"></script>
 <script type="text/html" id="hero-lvjing">
     <div class="intro">
         <h3>男神大名 : 吕靖</h3>

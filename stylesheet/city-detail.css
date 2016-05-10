@@ -218,50 +218,6 @@ section:last-child {
     background-position: 50% 20%;
 }
 
-
-/*
-Wu han
-*/
-.hero--hukai {
-    background-image: url("../images/wuhan/hukai-long.jpg");
-}
-
-.hero--lihongjing {
-    background-image: url("../images/wuhan/lihongjing-long.jpg");
-}
-
-.hero--lixufei {
-    background-image: url("../images/wuhan/lixufei-long.jpg");
-}
-
-.hero--songtiancheng {
-    background-image: url("../images/wuhan/songtiancheng-long.jpg");
-}
-
-.hero--tianbiao {
-    background-image: url("../images/wuhan/tianbiao-long.jpg");
-}
-
-.hero--wanglingwei {
-    background-image: url("../images/wuhan/wanglingwei-long.jpg");
-}
-
-.hero--wubang {
-    background-image: url("../images/wuhan/wubang-long.jpg");
-}
-
-.hero--zhaoruda {
-    background-image: url("../images/wuhan/zhaoruda-long.jpg");
-}
-
-.hero--zhouyu {
-    background-image: url("../images/wuhan/zhouyu-long.jpg");
-}
-
-
-
-
-
 @media (max-width: 960px) {
     .hero-show {
         display: none;
