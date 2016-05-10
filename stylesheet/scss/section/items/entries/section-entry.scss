@@ -57,35 +57,4 @@
   background-image: url('../../images/activity-five.png');
 }
 
-@media (max-width: 1060px) {
-  .section-entry-icon {
-    width: 100%;
-    display: block;
-    height: 140px;
-  }
-
-  .section-entry-text {
-    width: auto;
-    display: block;
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-
-  .section-entry-icon-caption {
-    float: none;
-    width: 5%;
-    height: 140px;
-    display: table-cell;
-    vertical-align: middle;
-  }
-
-    .activity-one-icon, .activity-two-icon, .activity-three-icon, .activity-four-icon, .activity-five-icon {
-    background-position: 50% 0;
-  }
-}
-
-@media (max-width: 1060px) {
-  .section-entry-text-content {
-    width: 100%;
-  }
-}
+@import "section-entry_responsive";
