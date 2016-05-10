@@ -40,6 +40,10 @@ body {
     width: 100%;
     height: auto;
     opacity: 0.4;
+    -webkit-filter: grayscale(80%);
+    -moz-filter: grayscale(60%);
+    -o-filter: grayscale(60%);
+    filter: grayscale(60%);
 }
 
 /*.tiles-wrap:hover li:not(:hover) {*/
@@ -115,64 +119,6 @@ section:last-child {
     background-repeat: no-repeat;
     background-position: 50% 20%;
 }
-
-/*
-Cheng Du
-*/
-
-.hero--lvjing {
-    background-image: url("../images/chengdu/lvjing.jpg");
-}
-
-.hero--zhaxi {
-    background-image: url("../images/chengdu/zhaxi-long.jpg");
-}
-
-.hero--bear {
-    background-image: url("../images/chengdu/bear-long.jpg");
-}
-
-.hero--weizhaoyu {
-    background-image: url("../images/chengdu/weizhaoyu-long.jpg");
-}
-
-.hero--zhaoming {
-    background-image: url("../images/chengdu/zhaoming-long.jpg");
-}
-
-.hero--chengjia {
-    background-image: url("../images/chengdu/chengjia-long.jpg");
-}
-
-.hero--linshuiqiang {
-    background-image: url("../images/chengdu/linshuiqiang.jpg");
-}
-
-.hero--dengyunlong {
-    background-image: url("../images/chengdu/dengyunlong.jpg");
-}
-
-.hero--dingmengli {
-    background-image: url("../images/chengdu/dingmengli-long.jpg");
-}
-
-.hero--fuluoyu {
-    background-image: url("../images/chengdu/fuluoyu.jpg");
-}
-
-.hero--huangbowen {
-    background-image: url("../images/chengdu/huangbowen-long.jpg");
-}
-
-.hero--liujiefeng {
-    background-image: url("../images/chengdu/liujiefeng-long.jpg");
-}
-
-.hero--louli {
-    background-image: url("../images/chengdu/louli.jpg");
-}
-
-
 
 /*
 Wu han
@@ -256,7 +202,3 @@ Wu han
     }
 }
 
-/*-webkit-filter: grayscale(60%);*/
-/*-moz-filter: grayscale(60%);*/
-/*-o-filter: grayscale(60%);*/
-/*filter: grayscale(60%);*/
