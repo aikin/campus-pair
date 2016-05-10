@@ -142,35 +142,45 @@
                 .done(function (instance) {
                     wookmark = new Wookmark('#container', {
                         itemWidth: function () {
+                            if (getWindowWidth() < 768) return "100%";
                             return getWindowWidth() < 960 ? '40%' : '24%'
                         },
                         outerOffset: 20,
-                        flexibleWidth: function () {
-                            return getWindowWidth() < 1024 ? '100%' : '50%';
-                        },
-                        autoResize: true
+                        flexibleWidth: true,
+                        autoResize: true,
+                        onLayoutChanged: function () {
+                            var $hero = $('.hero--tint');
+                            if (getWindowWidth() < 960) {
+                                $('.hero--tint').removeClass('hover');
+                                $hero.click(function () {
+                                    event.preventDefault();
+                                    $("#dojo").modal();
+                                }).unbind('mouseenter mouseleave');
+                                $('.submit').addClass('hide');
+                                return
+                            }
+                            $hero.hover(function () {
+                                $('.hero--tint').removeClass('hover');
+                                $(this).addClass('hover');
+                                $('.hero-show .detail').html($('#hero-' + $(this).children('img').attr('id')).html());
+                            }).unbind('click');
+                            $('#weizhaoyu')
+                                    .trigger('mouseenter')
+                                    .addClass('hover');
+                            $('.submit').removeClass('hide');
+                        }
                     });
                     setTimeout(function () {
                         $('#weizhaoyu')
                                 .trigger('mouseenter')
                                 .addClass('hover');
-                        $('.submit').removeClass('hide')
+                        $('.submit').removeClass('hide');
                     }, 1000);
                 });
 
-        $('.hero--tint').hover(function () {
-            $('.hero--tint').removeClass('hover');
-            $(this).addClass('hover');
-            $('.hero-show .detail').html($('#hero-' + $(this).children('img').attr('id')).html());
-        });
 
     });
-    //        $('.heroes-wall img').click(function () {
-    //            event.preventDefault();
-    //            $("#dojo").modal();
-    //        });
 </script>
-
 <script type="text/html" id="hero-lvjing">
     <div class="intro">
         <h3>男神大名 : 吕靖</h3>

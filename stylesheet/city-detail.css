@@ -122,6 +122,9 @@ body {
     border: 2px #fff solid;
 }
 
+.hero--tint:hover .ghost-btn-line-frame__content {
+    display: none;
+}
 
 .hero--tint.hover .ghost-btn-line-frame__content {
     display: none;
