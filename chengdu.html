@@ -26,23 +26,93 @@
         <div class="parallax-wrapper heroes-show">
             <div class="heroes-wall">
                 <ul id="container" class="tiles-wrap">
-                    <li><img id="lvjing" src="./images/chengdu/lvjing.jpg"></li>
-                    <li><img id="zhaxi" src="./images/chengdu/zhaxi.jpeg"></li>
-                    <li><img id="bear" src="./images/chengdu/bear.jpg"></li>
-                    <li><img id="weizhaoyu" src="./images/chengdu/weizhaoyu.jpeg"></li>
-                    <li><img id="zhaoming" src="./images/chengdu/zhaoming.jpg"></li>
-                    <li><img id="dengyunlong" src="./images/chengdu/dengyunlong.jpg"></li>
-                    <li><img id="chengjia" src="./images/chengdu/chengjia.png"></li>
-                    <li><img id="linshuiqiang" src="./images/chengdu/linshuiqiang.jpg"></li>
-                    <li><img id="liujiefeng" src="./images/chengdu/liujiefeng.jpeg"></li>
-                    <li><img id="huangbowen" src="./images/chengdu/huangbowen.png"></li>
-                    <li><img id="dingmengli" src="./images/chengdu/dingmengli.jpg"></li>
-                    <li><img id="fuluoyu" src="./images/chengdu/fuluoyu.jpg"></li>
-                    <li><img id="louli" src="./images/chengdu/louli.jpg"></li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">JavaScript, Python, Java</a>
+                        </div>
+                        <img id="lvjing" src="./images/chengdu/lvjing.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">JavaScript, C#, Java</a>
+                        </div>
+                        <img id="zhaxi" src="./images/chengdu/zhaxi.jpeg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Java, Ruby, JavaScript</a>
+                        </div>
+                        <img id="bear" src="./images/chengdu/bear.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">JavaScript</a>
+                        </div>
+                        <img id="weizhaoyu" src="./images/chengdu/weizhaoyu.jpeg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Java, Ruby</a>
+                        </div>
+                        <img id="zhaoming" src="./images/chengdu/zhaoming.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Java, Python, Javascript</a>
+                        </div>
+                        <img id="dengyunlong" src="./images/chengdu/dengyunlong.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">前端 etc.</a>
+                        </div>
+                        <img id="chengjia" src="./images/chengdu/chengjia.png">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">C&C++, Java, C#</a>
+                        </div>
+                        <img id="linshuiqiang" src="./images/chengdu/linshuiqiang.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">JavaScript, Python, Java</a>
+                        </div>
+                        <img id="liujiefeng" src="./images/chengdu/liujiefeng.jpeg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">JavaScript, Python, Java</a>
+                        </div>
+                        <img id="huangbowen" src="./images/chengdu/huangbowen.png">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">JavaScript, Java</a>
+                        </div>
+                        <img id="dingmengli" src="./images/chengdu/dingmengli.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Swift, Objective-C, Elixir</a>
+                        </div>
+                        <img id="fuluoyu" src="./images/chengdu/fuluoyu.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Android</a>
+                        </div>
+                        <img id="louli" src="./images/chengdu/louli.jpg">
+                    </li>
                 </ul>
             </div>
             <div class="hero-show">
+                <div class="detail"></div>
+                <div class="submit hide">
+                    <a href="#" class="submit__content">报名&提交</a>
+                </div>
             </div>
+
         </div>
     </section>
 </div>
@@ -61,39 +131,44 @@
 <script type="text/javascript" src="lib/jquery.modal.min.js"></script>
 <script type="text/javascript" src="lib/modernizr.js"></script>
 <script type="text/javascript">
-    $(function() {
-        (function () {
-            function getWindowWidth() {
-                return Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
-            }
+    $(function () {
+        function getWindowWidth() {
+            return Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+        }
 
-            var wookmark;
-            imagesLoaded('#container', function () {
-                wookmark = new Wookmark('#container', {
-                    itemWidth: "20%",
-                    outerOffset: 20,
-                    flexibleWidth: function () {
-                        return getWindowWidth() < 1024 ? '100%' : '50%';
-                    },
-                    autoResize: true
+        var wookmark;
+
+        $('#container').imagesLoaded()
+                .done(function (instance) {
+                    wookmark = new Wookmark('#container', {
+                        itemWidth: function () {
+                            return getWindowWidth() < 960 ? '40%' : '24%'
+                        },
+                        outerOffset: 20,
+                        flexibleWidth: function () {
+                            return getWindowWidth() < 1024 ? '100%' : '50%';
+                        },
+                        autoResize: true
+                    });
+                    setTimeout(function () {
+                        $('#weizhaoyu')
+                                .trigger('mouseenter')
+                                .addClass('hover');
+                        $('.submit').removeClass('hide')
+                    }, 1000);
                 });
-            });
-        })();
 
-        $('#container').find('img').hover(function(event) {
-            $("img").removeClass("hover");
-            $(this).addClass("hover");
-            $('.hero-show').html($('#hero-' + $(this).attr('id')).html());
-
+        $('.hero--tint').hover(function () {
+            $('.hero--tint').removeClass('hover');
+            $(this).addClass('hover');
+            $('.hero-show .detail').html($('#hero-' + $(this).children('img').attr('id')).html());
         });
 
-        $('.heroes-wall img').click(function () {
-            event.preventDefault();
-            $("#dojo").modal();
-        });
-
-        $('#lvjing').trigger("mouseenter").addClass("hover");
     });
+    //        $('.heroes-wall img').click(function () {
+    //            event.preventDefault();
+    //            $("#dojo").modal();
+    //        });
 </script>
 
 <script type="text/html" id="hero-lvjing">
@@ -124,7 +199,8 @@
         <h3>寄语广大的小鲜肉</h3>
         <p>Join ThoughtWorks, so you can meet a lot of cool people and travel to many interesting places!</p>
         <h3>对骚窝的一句表白</h3>
-        <p>ThoughtWorks is a very special place. There is a lot of fun smart people and you get to work with them every day. You can learn a lot while having fun!</p>
+        <p>ThoughtWorks is a very special place. There is a lot of fun smart people and you get to work with them every
+            day. You can learn a lot while having fun!</p>
     </div>
 </script>
 <script type="text/html" id="hero-weizhaoyu">
@@ -148,7 +224,7 @@
     </div>
 </script>
 <script type="text/html" id="hero-chengjia">
-</div>
+    </div>
     <div class="intro">
         <h3>男神大名 : 陈嘉</h3>
         <p>江湖名号 areschen</p>
@@ -196,6 +272,7 @@
         <p>小伙伴们快来一起愉快地玩耍！</p>
         <h3>对骚窝的一句表白</h3>
         <p>一个可以让你得到真正成长的地方。</p>
+
     </div>
 </script>
 <script type="text/html" id="hero-huangbowen">

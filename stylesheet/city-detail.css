@@ -21,34 +21,128 @@ body {
     line-height: 1.5;
 }
 
+.hero--tint {
+    position: relative;
+}
+
+.hero--tint:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 11, 0, 0.6);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.hero--tint:hover:before {
+    background: none;
+}
+
+.hero--tint.hover:before {
+    background: none;
+}
+
+
+.ghost-btn-line-frame {
+    height: 100%;
+    font-size: 0.65em;
+}
+
+.ghost-btn-line-frame__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 60px;
+    margin: auto;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 60px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 2px solid #fff;
+}
+
+.hide {
+    display: none;
+}
+
+.submit {
+    /*background-color: #1A1918;*/
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', serif;
+    font-weight: 200;
+    font-size: 20px;
+    height: 200px;
+    position: relative;
+}
+
+.submit__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    /*border: 2px solid #1A1918;*/
+    line-height: 100px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    letter-spacing: 10px;
+}
+
+.submit__content:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 2px solid #ffffff;
+    width: 280px;
+    height: 80px;
+    top: 8px;
+    left: 8px;
+}
+
+.submit__content:hover {
+    border: 2px #fff solid;
+}
+
+
+.hero--tint.hover .ghost-btn-line-frame__content {
+    display: none;
+}
+
+
 .tiles-wrap li {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
-
-.tiles-wrap li img.hover {
-    background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
-    opacity: 1;
-
-    -webkit-transition: all .2s ease;
-    -moz-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;
+    border: none;
 }
 
 .tiles-wrap li img {
     width: 100%;
     height: auto;
-    opacity: 0.4;
-    -webkit-filter: grayscale(80%);
-    -moz-filter: grayscale(60%);
-    -o-filter: grayscale(60%);
-    filter: grayscale(60%);
-}
-
-/*.tiles-wrap:hover li:not(:hover) {*/
     /*opacity: 0.4;*/
-/*}*/
+    /*-webkit-filter: grayscale(80%);*/
+    /*-moz-filter: grayscale(60%);*/
+    /*-o-filter: grayscale(60%);*/
+    /*filter: grayscale(60%);*/
+}
 
 .container {
     width: 100%;
@@ -58,14 +152,14 @@ body {
 }
 
 .parallax {
-    height: 100vh;
+    min-height: 100vh;
     background: url("../images/pair-background.png") no-repeat fixed;
     background-size: 100% 100%;
     position: relative;
 }
 
 .parallax-content {
-    height: 100vh;
+    min-height: 100vh;
     background: url("../images/pair-background.png") no-repeat;
     background-size: 100% 100%;
 }
@@ -77,13 +171,14 @@ body {
 }
 
 .parallax-wrapper__content {
-    height: auto;
+    /*height: auto;*/
     width: 60%;
     margin: auto;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    display: block;
     bottom: 0;
 }
 
@@ -102,14 +197,14 @@ section:last-child {
 
 .heroes-wall {
     float: left;
-    width: 55%;
+    width: 65%;
 }
 
 .hero-show {
     padding-top: 22px;
     padding-right: 10px;
     float: right;
-    width: 44%;
+    width: 35%;
 }
 
 .hero {
@@ -119,6 +214,7 @@ section:last-child {
     background-repeat: no-repeat;
     background-position: 50% 20%;
 }
+
 
 /*
 Wu han
@@ -163,11 +259,7 @@ Wu han
 
 
 
-@media (max-width: 1024px) {
-
-}
-
-@media (max-width: 1100px) {
+@media (max-width: 960px) {
     .hero-show {
         display: none;
     }
@@ -201,4 +293,3 @@ Wu han
         width: auto;
     }
 }
-
