@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>xian</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+
+    <link rel="stylesheet" href="../stylesheet/normalize.css">
+    <link rel="stylesheet" href="../stylesheet/main.css">
+    <link rel="stylesheet" href="../stylesheet/jquery.modal.min.css">
+    <link rel="stylesheet" href="../stylesheet/city-detail.css">
+
+</head>
+<body>
+
+<div class="container">
+    <section class="parallax">
+        <div class="parallax-wrapper">
+            <img src="../images/xian/game-pair-in-xian.png" class="parallax-wrapper__content">
+        </div>
+    </section>
+
+    <section class="parallax-content">
+        <div class="parallax-wrapper heroes-show">
+            <div class="heroes-wall">
+                <ul id="container" class="tiles-wrap">
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">JavaScript, CSS, Java</a>
+                        </div>
+                        <img id="fanwenbo" src="../images/xian/fanwenbo.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">JavaScript, CSS, Java</a>
+                        </div>
+                        <img id="fengxiaowu" src="../images/xian/fengxiaowu.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Java, Ruby, Clojure</a>
+                        </div>
+                        <img id="maochao" src="../images/xian/maochao.png">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Java, .Net</a>
+                        </div>
+                        <img id="wangni" class="auto-hover" src="../images/xian/wangni.jpg">
+
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Java, JavaScript, Android</a>
+                        </div>
+                        <img id="yangmengmeng" src="../images/xian/yangmengmeng.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Scheme, Python, Javascript</a>
+                        </div>
+                        <img id="yanli" src="../images/xian/yanli.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Java, Ruby, Javascript</a>
+                        </div>
+                        <img id="zhangjian" src="../images/xian/zhangjian.jpg">
+
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Java, React</a>
+                        </div>
+                        <img id="zhuxueliang" src="../images/xian/zhuxueliang.jpg">
+                    </li>
+                </ul>
+            </div>
+            <div class="hero-show">
+                <div class="detail"></div>
+                <div class="submit hide">
+                    <a href="#" class="submit__content">报名&提交</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+<div id="dojo" class="modal" style="display:none;">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<script type="text/javascript" src="../lib/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="../lib/wookmark.min.js"></script>
+<script type="text/javascript" src="../lib/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="../lib/jquery.modal.min.js"></script>
+<script type="text/javascript" src="../lib/modernizr.js"></script>
+<script type="text/javascript" src="../js/start.js"></script>
+
+<script type="text/html" id="hero-fanwenbo">
+    <div class="intro">
+        <h3>男神大名 : 胡凯</h3>
+        <p>江湖名号 饭钵</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>Stay hungry  stay foolish!</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>一入骚窝深似海，海阔天空任你闯！</p>
+    </div>
+</script>
+<script type="text/html" id="hero-fengxiaowu">
+    <div class="intro">
+        <h3>男神大名 : 格茸扎西</h3>
+        <p>江湖名号 狼主</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>Talk is cheap，show me the code.</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>At ThoughtWorks，your ideas come true.</p>
+    </div>
+</script>
+<script type="text/html" id="hero-maochao">
+    <div class="intro">
+        <h3>男神大名 : 周玉</h3>
+        <p>江湖名号 小玉玉,杉菜</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>Join ThoughtWorks, so you can meet a lot of cool people and travel to many interesting places!</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>ThoughtWorks is a very special place. There is a lot of fun smart people and you get to work with them every day. You can learn a lot while having fun!</p>
+    </div>
+</script>
+<script type="text/html" id="hero-wangni">
+    <div class="intro">
+        <h3>女神大名 : 汪凌薇</h3>
+        <p>江湖名号 词典？</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>Developers run the world!</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>有颜值,有技术,有情怀,你值得拥有！</p>
+    </div>
+</script>
+<script type="text/html" id="hero-yangmengmeng">
+    <div class="intro">
+        <h3>男神大名 : 李旭飞</h3>
+        <p>江湖名号 李旭飞</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>咱们一起加油，玩得好才是真的好！</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>有情怀的公司，成为TWer是我的小幸运。</p>
+    </div>
+</script>
+<script type="text/html" id="hero-yanli">
+    <div class="intro">
+        <h3>男神大名 : 宋天成</h3>
+        <p>江湖名号 areschen</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>加入ThoughtWorks，成就你的梦想！</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>ThoughtWorks，where thought works！</p>
+    </div>
+</script>
+<script type="text/html" id="hero-zhangjian">
+    <div class="intro">
+        <h3>男神大名 : 田彪</h3>
+        <p>江湖名号 彪彪</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>欢迎加入骚窝大家庭！</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>这是一个充满技术与激情的有爱的大家庭！</p>
+    </div>
+</script>
+<script type="text/html" id="hero-zhuxueliang">
+    <div class="intro">
+        <h3>男神大名 : 吴邦</h3>
+        <p>江湖名号 委员</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>生活赋予我们一种巨大的和无限高贵的礼品，这就是青春：充满着力量，充满着期待志愿，充满着求知和斗争的志向，充满着希望信心和青春。年轻真好。</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>和有趣的人做有趣的事。</p>
+    </div>
+</script>
+</body>
+</html>
