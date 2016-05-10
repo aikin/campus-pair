@@ -1,0 +1,333 @@
+.text-white {
+  color: white; }
+
+.text-medium {
+  font-size: 25px; }
+
+.text-small {
+  font-size: 20px; }
+
+.text-tiny {
+  font-size: 15px; }
+
+body {
+  background-color: white; }
+
+.bodyWrapper {
+  background-color: white;
+  min-width: 715px;
+  max-width: 1440px;
+  margin: 0 auto; }
+
+.navBar {
+  height: 60px;
+  padding-top: 25px;
+  background-color: white;
+  position: fixed;
+  width: 100%; }
+
+.container-navBar-item {
+  float: right;
+  margin-right: 5%; }
+
+.navBar-normalItem {
+  display: inline-block;
+  width: 105px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 17px;
+  cursor: pointer;
+  color: #8e8e8e; }
+
+.navBar-normalItem:hover {
+  transition-duration: 0.2s;
+  opacity: 0.9; }
+
+.navBar-purpleFramedItem {
+  display: inline-block;
+  width: 105px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 17px;
+  cursor: pointer;
+  color: #CB6B93;
+  border: solid 1px #CB6B93; }
+
+.navBar-purpleFramedItem:hover {
+  transition-duration: 0.2s;
+  color: white;
+  background-color: #CB6B93; }
+
+.mediumSection {
+  padding-top: 1px;
+  margin-top: -1px;
+  background-repeat: no-repeat;
+  height: 700px; }
+
+.bigSection {
+  padding-top: 1px;
+  margin-top: -1px;
+  background-repeat: no-repeat;
+  height: 800px; }
+
+.hugeSection {
+  padding-top: 1px;
+  margin-top: -1px;
+  background-repeat: no-repeat;
+  height: 1230px; }
+
+.pair-programming-background {
+  background-size: contain;
+  background-image: url("../../images/the-game-of-pair.png");
+  background-position: 55% 50%; }
+
+.sign-up-background {
+  background-size: cover;
+  background-image: url("../../images/sign-up.png");
+  background-position: 0 35%; }
+
+.company-thoughtworks-background {
+  background-size: cover;
+  background-image: url("../../images/company-thoughtworks.png");
+  background-position: 45% 60%; }
+
+.activity-process-background {
+  background-color: #0AB0C5; }
+
+.city-sign-up-background {
+  background-color: #A9084D; }
+
+@media (max-width: 1100px) {
+  .pair-programming-background {
+    background-size: 150%; } }
+.section-mediumPicture {
+  background: no-repeat;
+  background-size: contain;
+  background-position-x: 52%;
+  height: 130px; }
+
+.section-bigPicture {
+  background: no-repeat;
+  background-size: contain;
+  background-position-x: 52%;
+  height: 200px; }
+
+.thoughtworks-elements-background {
+  background-image: url("../../images/thoughtworks-elements.png"); }
+
+.thoughtworks-logo-background {
+  background-image: url("../../images/thoughtworks-logo.png"); }
+
+.section-entry {
+  height: 200px;
+  width: 100%; }
+
+.section-entry-icon {
+  width: 37%; }
+
+.section-entry-icon-caption {
+  float: right;
+  width: 200px;
+  text-align: center; }
+
+.section-entry-text {
+  width: 63%;
+  padding-left: 40px; }
+
+.section-entry-text-content {
+  width: 75%; }
+
+.activity-one-icon {
+  background: no-repeat;
+  background-size: contain;
+  background-position: 100% 0;
+  background-image: url("../../images/activity-one.png"); }
+
+.activity-two-icon {
+  background: no-repeat;
+  background-size: contain;
+  background-position: 100% 0;
+  background-image: url("../../images/activity-two.png"); }
+
+.activity-three-icon {
+  background: no-repeat;
+  background-size: contain;
+  background-position: 100% 0;
+  background-image: url("../../images/activity-three.png"); }
+
+.activity-four-icon {
+  background: no-repeat;
+  background-size: contain;
+  background-position: 100% 0;
+  background-image: url("../../images/activity-four.png"); }
+
+.activity-five-icon {
+  background: no-repeat;
+  background-size: contain;
+  background-position: 100% 0;
+  background-image: url("../../images/activity-five.png"); }
+
+@media (max-width: 1060px) {
+  .section-entry-icon {
+    width: 100%;
+    display: block;
+    height: 140px; }
+
+  .section-entry-text {
+    width: auto;
+    display: block;
+    padding-left: 80px;
+    padding-right: 80px; }
+
+  .section-entry-icon-caption {
+    float: none;
+    width: 5%;
+    height: 140px;
+    display: table-cell;
+    vertical-align: middle; }
+
+  .activity-one-icon, .activity-two-icon, .activity-three-icon, .activity-four-icon, .activity-five-icon {
+    background-position: 50% 0; } }
+@media (max-width: 1060px) {
+  .section-entry-text-content {
+    width: 100%; } }
+.section-largeEntry {
+  height: 300px;
+  width: 100%; }
+
+.section-largeEntry-icon {
+  width: 56%; }
+
+.section-largeEntry-icon-img {
+  float: right; }
+
+.section-largeEntry-text {
+  width: 44%;
+  padding-left: 30px; }
+
+@media (max-width: 1060px) {
+  .section-largeEntry-icon {
+    display: block;
+    width: 100%; }
+
+  .section-largeEntry-icon-img {
+    float: none;
+    width: 100%; }
+
+  .section-largeEntry-text {
+    display: block;
+    width: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 40px; } }
+@media (max-width: 1060px) {
+  .section-largeEntry-text {
+    padding-top: 60px; } }
+@media (max-width: 950px) {
+  .section-largeEntry-text {
+    padding-top: 90px; } }
+.section-text {
+  text-align: center; }
+
+.section-leftAlignedText {
+  text-align: left; }
+
+.section-gallery {
+  height: 200px;
+  padding-left: 15%;
+  padding-right: 15%; }
+
+.container-section-gallery-item {
+  width: 100%;
+  height: 100%; }
+
+.section-gallery-item {
+  width: 25%;
+  text-align: center;
+  vertical-align: bottom;
+  color: white; }
+
+.beijing-background {
+  background: no-repeat;
+  background-image: url("../../images/beijing.png");
+  background-size: 70%;
+  background-position: 50% 10%; }
+
+.xian-background {
+  background: no-repeat;
+  background-image: url("../../images/xian.png");
+  background-size: 80%;
+  background-position: 50% 10%; }
+
+.chengdu-background {
+  background: no-repeat;
+  background-image: url("../../images/chengdu.png");
+  background-size: 55%;
+  background-position: 50% 20%; }
+
+.wuhan-background {
+  background: no-repeat;
+  background-image: url("../../images/wuhan.png");
+  background-size: 50%;
+  background-position: 50% 15%; }
+
+@media (max-width: 1000px) {
+  .section-gallery {
+    height: auto; }
+
+  .container-section-gallery-item {
+    height: auto; }
+
+  .section-gallery-item {
+    width: 100%;
+    height: 70px;
+    display: block;
+    padding-top: 180px;
+    vertical-align: inherit; }
+
+  .beijing-background {
+    background-size: 160px; }
+
+  .xian-background {
+    background-size: 160px; }
+
+  .chengdu-background {
+    background-size: 120px; }
+
+  .wuhan-background {
+    background-size: 120px; } }
+.section-hugeWhitespace {
+  margin-top: 200px; }
+
+.section-largeWhitespace {
+  margin-top: 100px; }
+
+.section-bigWhitespace {
+  margin-top: 60px; }
+
+.section-mediumWhitespace {
+  margin-top: 40px; }
+
+.section-smallWhitespace {
+  margin-top: 20px; }
+
+.section-tinyWhitespace {
+  margin-top: 10px; }
+
+.section-hugeHorizontalWhitespace {
+  margin-left: 18%;
+  margin-right: 18%; }
+
+@media (max-width: 1060px) {
+  .pairProgrammingSection {
+    height: 1100px; } }
+@media (max-width: 1060px) {
+  .myActivitySection {
+    height: 1600px; } }
+@media (max-width: 1000px) {
+  .citySignUpSection {
+    height: 1600px; } }
