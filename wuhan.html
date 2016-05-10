@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>wuhan</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+
+    <link rel="stylesheet" href="stylesheet/normalize.css">
+    <link rel="stylesheet" href="stylesheet/main.css">
+    <link rel="stylesheet" href="stylesheet/jquery.modal.min.css">
+    <link rel="stylesheet" href="stylesheet/city-detail.css">
+
+</head>
+<body>
+
+<div class="container">
+    <section class="parallax">
+        <div class="parallax-wrapper">
+            <img src="./images/wuhan/game-pair-in-wuhan.png" class="parallax-wrapper__content">
+        </div>
+    </section>
+
+    <section class="parallax-content">
+        <div class="parallax-wrapper heroes-show">
+            <div class="heroes-wall">
+                <ul id="container" class="tiles-wrap">
+                    <li><img id="zhouyu" src="images/wuhan/zhouyu.jpg"></li>
+                    <li><img id="lihongjing" src="./images/wuhan/lihongjing.png"></li>
+                    <li><img id="lixufei" src="./images/wuhan/lixufei.jpeg"></li>
+                    <li><img id="wanglingwei" src="./images/wuhan/wanglingwei.jpg"></li>
+                    <li><img id="hukai" src="./images/wuhan/hukai.JPG"></li>
+                    <li><img id="songtiancheng" src="./images/wuhan/songtiancheng.jpg"></li>
+                    <li><img id="tianbiao" src="./images/wuhan/tianbiao.jpg"></li>
+                    <li><img id="wubang" src="./images/wuhan/wubang.jpeg"></li>
+                    <li><img id="zhaoruda" src="./images/wuhan/zhaoruda.JPG"></li>
+                </ul>
+            </div>
+            <div class="hero-show">
+            </div>
+        </div>
+    </section>
+</div>
+<div id="dojo" class="modal" style="display:none;">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<script type="text/javascript" src="lib/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="lib/wookmark.min.js"></script>
+<script type="text/javascript" src="lib/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="lib/jquery.modal.min.js"></script>
+<script type="text/javascript" src="lib/modernizr.js"></script>
+<script type="text/javascript">
+    $(function() {
+        (function () {
+            function getWindowWidth() {
+                return Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+            }
+
+            var wookmark;
+            imagesLoaded('#container', function () {
+                wookmark = new Wookmark('#container', {
+                    itemWidth: "20%",
+                    outerOffset: 20,
+                    flexibleWidth: function () {
+                        return getWindowWidth() < 1024 ? '100%' : '50%';
+                    },
+                    autoResize: true
+                });
+            });
+        })();
+
+        $('#container').find('img').hover(function(event) {
+            $("img").removeClass("hover");
+            $(this).addClass("hover");
+            $('.hero-show').html($('#hero-' + $(this).attr('id')).html());
+
+        });
+
+        $('.heroes-wall img').click(function () {
+            event.preventDefault();
+            $("#dojo").modal();
+        });
+
+        $('#zhouyu').trigger("mouseenter").addClass("hover");
+    });
+</script>
+
+<script type="text/html" id="hero-hukai">
+    <div class="hero hero--hukai">
+    </div>
+    <div class="intro">
+        <h3>男神大名 : 吕靖</h3>
+        <p>江湖名号 立青 & Jimmy</p>
+        <p>名号由来 立青 => 靖 => Jing => Jim => Jimmy</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>你过去所经历的__，和你将来想要实现的__，共同成就了现在的你。</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>ThoughtWorks，影响程序员，引领软件行业，就是改变整个世界！</p>
+    </div>
+</script>
+<script type="text/html" id="hero-lihongjing">
+    <div class="hero hero--lihongjing">
+    </div>
+    <div class="intro">
+        <h3>男神大名 : 格茸扎西</h3>
+        <p>江湖名号 狼主</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>Talk is cheap，show me the code.</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>At ThoughtWorks，your ideas come true.</p>
+    </div>
+</script>
+<script type="text/html" id="hero-zhouyu">
+    <div class="hero hero--zhouyu">
+    </div>
+    <div class="intro">
+        <h3>男神大名 : Aleksandar Serafimoski</h3>
+        <p>江湖名号 Bearclaw</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>Join ThoughtWorks, so you can meet a lot of cool people and travel to many interesting places!</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>ThoughtWorks is a very special place. There is a lot of fun smart people and you get to work with them every day. You can learn a lot while having fun!</p>
+    </div>
+</script>
+<script type="text/html" id="hero-wanglingwei">
+    <div class="hero hero--wanglingwei">
+    </div>
+    <div class="intro">
+        <h3>女神大名 : 魏兆玉</h3>
+        <p>江湖名号 Zhaoyu</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>日精进。</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>追求技术卓越，追求社会公正！</p>
+    </div>
+</script>
+<script type="text/html" id="hero-lixufei">
+    <div class="hero hero--lixufei">
+    </div>
+    <div class="intro">
+        <h3>男神大名 : 赵明</h3>
+        <p>江湖名号 小明</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>给予自己负责的原则，做你想做的事情。</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>编程有益身心健康！</p>
+    </div>
+</script>
+<script type="text/html" id="hero-songtiancheng">
+    <div class="hero hero--songtiancheng">
+    </div>
+    <div class="intro">
+        <h3>男神大名 : 陈嘉</h3>
+        <p>江湖名号 areschen</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>加入ThoughtWorks，成就你的梦想！</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>ThoughtWorks，where thought works！</p>
+    </div>
+</script>
+<script type="text/html" id="hero-tianbiao">
+    <div class="hero hero--tianbiao">
+    </div>
+    <div class="intro">
+        <h3>男神大名 : 林水强</h3>
+        <p>江湖名号 Waterstrong</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>满腔热血的少年们，加入ThoughtWorks成就你的非凡！</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>ThoughtWorks, 一个来了就会爱上的地方。</p>
+    </div>
+</script>
+<script type="text/html" id="hero-wubang">
+    <div class="hero hero--wubang">
+    </div>
+    <div class="intro">
+        <h3>男神大名 : 郑云龙</h3>
+        <p>江湖名号 云龙</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>这里有无限可能！</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>ThoughtWorks的特产：干货！</p>
+    </div>
+</script>
+<script type="text/html" id="hero-zhaoruda">
+    <div class="hero hero--zhaoruda">
+    </div>
+    <div class="intro">
+        <h3>女神大名 : 丁梦力</h3>
+        <p>江湖名号 Power</p>
+        <h3>寄语广大的小鲜肉</h3>
+        <p>骚窝，温暖，温情，快到碗里来！</p>
+        <h3>对骚窝的一句表白</h3>
+        <p>有激情，有技术的精英聚集地！</p>
+    </div>
+</script>
+</body>
+</html>
