@@ -9,6 +9,11 @@
 }
 
 //sections
+.smallSection {
+  @include section;
+  height: 600px;
+}
+
 .mediumSection {
   @include section;
   height: 700px;
@@ -48,6 +53,10 @@
 }
 
 .city-sign-up-background {
+  background-color: #A9084D;
+}
+
+.leadership-pride-background {
   background-color: #A9084D;
 }
 

@@ -4,6 +4,12 @@
   padding-right: 15%;
 }
 
+.section-smallGallery {
+  height: 150px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
 .container-section-gallery-item {
   width: 100%;
   height: 100%;
@@ -15,6 +21,10 @@
   text-align: center;
   vertical-align: bottom;
   color: white;
+}
+
+.section-smallGallery-item {
+  width: 33%;
 }
 
 @mixin section-gallery-item-background {
@@ -47,6 +57,48 @@
   background-image: url("../../images/wuhan.png");
   background-size: 50%;
   background-position: 50% 15%;
+}
+
+.book-refactor-background {
+  @include section-gallery-item-background;
+  background-image: url("../../images/book-refactor.png");
+  background-size: 60%;
+  background-position: 50% 50%;
+}
+
+.book-js-background {
+  @include section-gallery-item-background;
+  background-image: url("../../images/book-js.png");
+  background-size: 60%;
+  background-position: 50% 50%;
+}
+
+.book-lean-background {
+  @include section-gallery-item-background;
+  background-image: url("../../images/book-lean.png");
+  background-size: 60%;
+  background-position: 50% 50%;
+}
+
+.book-measurement-background {
+  @include section-gallery-item-background;
+  background-image: url("../../images/book-measurement.png");
+  background-size: 60%;
+  background-position: 50% 50%;
+}
+
+.book-anthology-background {
+  @include section-gallery-item-background;
+  background-image: url("../../images/book-anthology.png");
+  background-size: 60%;
+  background-position: 50% 50%;
+}
+
+.book-mobile-background {
+  @include section-gallery-item-background;
+  background-image: url("../../images/book-mobile.png");
+  background-size: 60%;
+  background-position: 50% 50%;
 }
 
 //@import "section-gallery_responsive";
