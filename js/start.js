@@ -31,14 +31,14 @@ $(function () {
                         $(this).addClass('hover');
                         $('.hero-show .detail').html($('#hero-' + $(this).children('img').attr('id')).html());
                     }).unbind('click');
-                    $('#weizhaoyu')
+                    $('.auto-hover')
                         .trigger('mouseenter')
                         .addClass('hover');
                     $('.submit').removeClass('hide');
                 }
             });
             setTimeout(function () {
-                $('#weizhaoyu')
+                $('.auto-hover')
                     .trigger('mouseenter')
                     .addClass('hover');
                 $('.submit').removeClass('hide');
