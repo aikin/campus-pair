@@ -9,6 +9,11 @@
 }
 
 //sections
+.tinySection {
+  @include section;
+  height: 280px;
+}
+
 .smallSection {
   @include section;
   height: 600px;
@@ -46,6 +51,12 @@
   background-size: cover;
   background-image: url('../../images/company-thoughtworks.png');
   background-position: 45% 60%;
+}
+
+.company-thoughtworks-narrowBackground {
+  background-size: cover;
+  background-image: url('../../images/company-thoughtworks.png');
+  background-position: 45% 75%;
 }
 
 .activity-process-background {
