@@ -18,30 +18,30 @@ $(function () {
                 onLayoutChanged: function () {
                     var $hero = $('.hero--tint');
                     if (getWindowWidth() < 960) {
-                        $('.hero--tint').removeClass('hover');
+                        $hero.removeClass('hover');
                         $hero.click(function () {
                             event.preventDefault();
                             $("#dojo").modal();
                         }).unbind('mouseenter mouseleave');
-                        $('.submit').addClass('hide');
+                        
                         return
                     }
+
                     $hero.hover(function () {
-                        $('.hero--tint').removeClass('hover');
+                        $hero.removeClass('hover');
                         $(this).addClass('hover');
-                        $('.hero-show .detail').html($('#hero-' + $(this).children('img').attr('id')).html());
+                        $('.hero-show').html($('#hero-' + $(this).children('img').attr('id')).html());
                     }).unbind('click');
+                    
                     $('.auto-hover')
                         .trigger('mouseenter')
                         .addClass('hover');
-                    $('.submit').removeClass('hide');
                 }
             });
             setTimeout(function () {
                 $('.auto-hover')
                     .trigger('mouseenter')
                     .addClass('hover');
-                $('.submit').removeClass('hide');
             }, 1000);
         });
 });
