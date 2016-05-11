@@ -62,6 +62,18 @@ body {
   color: white;
   background-color: #CB6B93; }
 
+.tinySection {
+  padding-top: 1px;
+  margin-top: -1px;
+  background-repeat: no-repeat;
+  height: 280px; }
+
+.smallSection {
+  padding-top: 1px;
+  margin-top: -1px;
+  background-repeat: no-repeat;
+  height: 600px; }
+
 .mediumSection {
   padding-top: 1px;
   margin-top: -1px;
@@ -95,15 +107,35 @@ body {
   background-image: url("../../images/company-thoughtworks.png");
   background-position: 45% 60%; }
 
+.company-thoughtworks-narrowBackground {
+  background-size: cover;
+  background-image: url("../../images/company-thoughtworks.png");
+  background-position: 45% 75%; }
+
 .activity-process-background {
   background-color: #0AB0C5; }
 
 .city-sign-up-background {
   background-color: #A9084D; }
 
+.leadership-pride-background {
+  background-color: #A9084D; }
+
 @media (max-width: 1100px) {
   .pair-programming-background {
     background-size: 150%; } }
+.section-subsection {
+  width: 100%;
+  height: 100%; }
+
+.section-subsection-left {
+  vertical-align: top;
+  width: 40%; }
+
+.section-subsection-right {
+  vertical-align: top;
+  width: 60%; }
+
 .section-mediumPicture {
   background: no-repeat;
   background-size: contain;
@@ -121,6 +153,12 @@ body {
 
 .thoughtworks-logo-background {
   background-image: url("../../images/thoughtworks-logo.png"); }
+
+.team-member1-background {
+  background-image: url("../../images/team-member.png"); }
+
+.team-member2-background {
+  background-image: url("../../images/team-member2.png"); }
 
 .section-entry {
   height: 200px;
@@ -191,8 +229,8 @@ body {
     vertical-align: middle; }
 
   .activity-one-icon, .activity-two-icon, .activity-three-icon, .activity-four-icon, .activity-five-icon {
-    background-position: 50% 0; } }
-@media (max-width: 1060px) {
+    background-position: 50% 0; }
+
   .section-entry-text-content {
     width: 100%; } }
 .section-largeEntry {
@@ -223,8 +261,8 @@ body {
     width: auto;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 40px; } }
-@media (max-width: 1060px) {
+    padding-top: 40px; }
+
   .section-largeEntry-text {
     padding-top: 60px; } }
 @media (max-width: 950px) {
@@ -236,10 +274,20 @@ body {
 .section-leftAlignedText {
   text-align: left; }
 
-.section-gallery {
-  height: 200px;
+.section-normalGallery {
   padding-left: 15%;
-  padding-right: 15%; }
+  padding-right: 15%;
+  height: 200px; }
+
+.section-bigGallery {
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 270px; }
+
+.section-smallGallery {
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 150px; }
 
 .container-section-gallery-item {
   width: 100%;
@@ -250,6 +298,14 @@ body {
   text-align: center;
   vertical-align: bottom;
   color: white; }
+
+.section-bigGallery-item {
+  width: 33%;
+  text-align: center;
+  vertical-align: bottom; }
+
+.section-smallGallery-item {
+  width: 33%; }
 
 .beijing-background {
   background: no-repeat;
@@ -275,31 +331,94 @@ body {
   background-size: 50%;
   background-position: 50% 15%; }
 
+.book-refactor-background {
+  background: no-repeat;
+  background-image: url("../../images/book-refactor.png");
+  background-size: 60%;
+  background-position: 50% 50%; }
+
+.book-js-background {
+  background: no-repeat;
+  background-image: url("../../images/book-js.png");
+  background-size: 60%;
+  background-position: 50% 50%; }
+
+.book-lean-background {
+  background: no-repeat;
+  background-image: url("../../images/book-lean.png");
+  background-size: 60%;
+  background-position: 50% 50%; }
+
+.book-measurement-background {
+  background: no-repeat;
+  background-image: url("../../images/book-measurement.png");
+  background-size: 60%;
+  background-position: 50% 50%; }
+
+.book-anthology-background {
+  background: no-repeat;
+  background-image: url("../../images/book-anthology.png");
+  background-size: 60%;
+  background-position: 50% 50%; }
+
+.book-mobile-background {
+  background: no-repeat;
+  background-image: url("../../images/book-mobile.png");
+  background-size: 60%;
+  background-position: 50% 50%; }
+
+.p1-background {
+  background: no-repeat;
+  background-image: url("../../images/p1.png");
+  background-size: 60%;
+  background-position: 50% 20%; }
+
+.p2-background {
+  background: no-repeat;
+  background-image: url("../../images/p2.png");
+  background-size: 50%;
+  background-position: 50% 20%; }
+
+.p3-background {
+  background: no-repeat;
+  background-image: url("../../images/p3.png");
+  background-size: 60%;
+  background-position: 50% 20%; }
+
 @media (max-width: 1000px) {
-  .section-gallery {
+  .gallery-RESP {
     height: auto; }
 
-  .container-section-gallery-item {
+  .gallery-item-container-RESP {
     height: auto; }
 
-  .section-gallery-item {
+  .gallery-item-RESP {
     width: 100%;
     height: 70px;
     display: block;
     padding-top: 180px;
     vertical-align: inherit; }
 
-  .beijing-background {
+  .beijing-background-RESP {
     background-size: 160px; }
 
-  .xian-background {
+  .xian-background-RESP {
     background-size: 160px; }
 
-  .chengdu-background {
+  .chengdu-background-RESP {
     background-size: 120px; }
 
-  .wuhan-background {
-    background-size: 120px; } }
+  .wuhan-background-RESP {
+    background-size: 120px; }
+
+  .p1-background-RESP {
+    background-size: 160px; }
+
+  .p2-background-RESP {
+    background-size: 130px; }
+
+  .p3-background-RESP {
+    background-size: 150px; } }
 .section-hugeWhitespace {
   margin-top: 200px; }
 
@@ -329,5 +448,5 @@ body {
   .myActivitySection {
     height: 1600px; } }
 @media (max-width: 1000px) {
-  .citySignUpSection {
-    height: 1600px; } }
+  .missionSection {
+    height: 1270px; } }
