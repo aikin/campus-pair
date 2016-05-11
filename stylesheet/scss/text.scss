@@ -3,6 +3,14 @@
 }
 
 
+.text-huge {
+  font-size: 35px;
+}
+
+.text-large {
+  font-size: 30px;
+}
+
 .text-medium {
   font-size: 25px;
 }
@@ -13,4 +21,9 @@
 
 .text-tiny {
   font-size: 15px;
+}
+
+.text-float-up {
+  position: relative;
+  bottom: 12px;
 }
