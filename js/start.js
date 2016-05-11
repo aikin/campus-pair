@@ -21,7 +21,9 @@ $(function () {
                         $hero.removeClass('hover');
                         $hero.click(function () {
                             event.preventDefault();
-                            $("#dojo").modal();
+                            $('#intro-modal p').html($('#hero-' + $(this).children('img').attr('id')).html());
+                            $('#intro-modal').modal();
+                            $('#intro-modal pre').perfectScrollbar();
                         }).unbind('mouseenter mouseleave');
 
                         return

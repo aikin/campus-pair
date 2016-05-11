@@ -256,6 +256,17 @@ section:last-child {
     }
 
     .modal {
-        width: auto;
+        width: 100%;
+        background: rgba(19, 23, 1, 0.5);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .submit__content {
+        width: 200px;
+    }
+
+    .submit__content:before {
+        width: 180px;
     }
 }
