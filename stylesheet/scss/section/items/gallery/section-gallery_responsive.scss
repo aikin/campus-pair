@@ -1,12 +1,12 @@
 @media (max-width: 1000px) {
-  .section-gallery {
+  .gallery-RESP {
     height: auto;
   }
-  .container-section-gallery-item {
+  .gallery-item-container-RESP {
     height: auto;
   }
 
-  .section-gallery-item {
+  .gallery-item-RESP {
     width: 100%;
     height: 70px;
     display: block;
@@ -15,16 +15,26 @@
     vertical-align: inherit;
   }
 
-  .beijing-background {
+  .beijing-background-RESP {
     background-size: 160px;
   }
-  .xian-background {
+  .xian-background-RESP {
     background-size: 160px;
   }
-  .chengdu-background {
+  .chengdu-background-RESP {
     background-size: 120px;
   }
-  .wuhan-background {
+  .wuhan-background-RESP {
     background-size: 120px;
+  }
+
+  .p1-background-RESP {
+    background-size: 160px;
+  }
+  .p2-background-RESP {
+    background-size: 130px;
+  }
+  .p3-background-RESP {
+    background-size: 150px;
   }
 }
