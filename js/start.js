@@ -23,7 +23,7 @@ $(function () {
                             event.preventDefault();
                             $("#dojo").modal();
                         }).unbind('mouseenter mouseleave');
-                        
+
                         return
                     }
 
@@ -31,8 +31,9 @@ $(function () {
                         $hero.removeClass('hover');
                         $(this).addClass('hover');
                         $('.hero-show').html($('#hero-' + $(this).children('img').attr('id')).html());
+                        $('.intro pre').perfectScrollbar();
                     }).unbind('click');
-                    
+
                     $('.auto-hover')
                         .trigger('mouseenter')
                         .addClass('hover');

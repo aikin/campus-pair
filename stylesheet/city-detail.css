@@ -218,6 +218,13 @@ section:last-child {
     background-position: 50% 20%;
 }
 
+.intro pre {
+    font-size: 1.15em;
+    padding-bottom: 6px;
+    line-height: 1.8;
+    position: relative;
+}
+
 @media (max-width: 960px) {
     .hero-show {
         display: none;
