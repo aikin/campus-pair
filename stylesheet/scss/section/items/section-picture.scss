@@ -14,18 +14,4 @@
   height: 200px;
 }
 
-.thoughtworks-elements-background {
-  background-image: url('../../images/thoughtworks-elements.png');
-}
-
-.thoughtworks-logo-background {
-  background-image: url('../../images/thoughtworks-logo.png');
-}
-
-.team-member1-background {
-  background-image: url('../../images/team-member.png');
-}
-
-.team-member2-background {
-  background-image: url('../../images/team-member2.png');
-}
+@import "../../backgrounds/sectionPictureBackgrounds";
