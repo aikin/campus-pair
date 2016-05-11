@@ -1,20 +1,17 @@
-//navBars
 .navBar {
-  height: 60px;
-  padding-top: 25px;
+  height: 40px;
+  padding-top: 15px;
 
   background-color: white;
   position: fixed;
   width: 100%;
 }
 
-//navBar container
 .container-navBar-item {
   float: right;
   margin-right: 5%;
 }
 
-//navBar items
 @mixin navBar-item {
   display: inline-block;
   width: 105px;
