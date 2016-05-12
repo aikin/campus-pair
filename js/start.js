@@ -21,6 +21,8 @@ $(function () {
                         $hero.removeClass('hover');
                         $hero.click(function () {
                             event.preventDefault();
+                            $hero.removeClass('hover');
+                            $(this).addClass('hover');
                             $('#intro-modal p').html($('#hero-' + $(this).children('img').attr('id')).html());
                             $('#intro-modal').modal();
                             $('#intro-modal pre').perfectScrollbar();
@@ -29,21 +31,26 @@ $(function () {
                         return
                     }
 
-                    $hero.hover(function () {
+                    $('.ghost-btn-line-frame__content').hover(function () {
                         $hero.removeClass('hover');
-                        $(this).addClass('hover');
-                        $('.hero-show').html($('#hero-' + $(this).children('img').attr('id')).html());
+                        var $parents = $(this).parents('.hero--tint');
+                        $parents.addClass('hover');
+                        $('.hero-show').html($('#hero-' + $parents.children('img').attr('id')).html());
                         $('.intro pre').perfectScrollbar();
                     }).unbind('click');
 
-                    $('.auto-hover')
-                        .trigger('mouseenter')
-                        .addClass('hover');
+                    setTimeout(function () {
+                        $('.auto-hover')
+                            .trigger('mouseenter')
+                            .parents('.hero--tint')
+                            .addClass('hover');
+                    }, 1000);
                 }
             });
             setTimeout(function () {
                 $('.auto-hover')
                     .trigger('mouseenter')
+                    .parents('.hero--tint')
                     .addClass('hover');
             }, 1000);
         });

@@ -41,9 +41,9 @@ body {
     transition: all .3s linear;
 }
 
-.hero--tint:hover:before {
-    background: none;
-}
+/*.hero--tint:hover:before {*/
+    /*background: none;*/
+/*}*/
 
 .hero--tint.hover:before {
     background: none;
@@ -122,9 +122,9 @@ body {
     border: 2px #fff solid;
 }
 
-.hero--tint:hover .ghost-btn-line-frame__content {
-    display: none;
-}
+/*.hero--tint:hover .ghost-btn-line-frame__content {*/
+    /*display: none;*/
+/*}*/
 
 .hero--tint.hover .ghost-btn-line-frame__content {
     display: none;
