@@ -1,27 +1,45 @@
 .text-white {
   color: white; }
 
+.text-huge {
+  font-size: 35px; }
+
+.text-large {
+  font-size: 30px; }
+
 .text-medium {
   font-size: 25px; }
 
 .text-small {
   font-size: 20px; }
 
+.text-litte {
+  font-size: 18px; }
+
 .text-tiny {
   font-size: 15px; }
 
+.text-float-up {
+  position: relative;
+  bottom: 12px; }
+
 body {
-  background-color: white; }
+  background-color: white;
+  font-family: STHeiTi, SimHei; }
 
 .bodyWrapper {
   background-color: white;
   min-width: 715px;
   max-width: 1440px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  line-height: 180%; }
+
+a {
+  text-decoration: none; }
 
 .navBar {
-  height: 60px;
-  padding-top: 25px;
+  height: 40px;
+  padding-top: 15px;
   background-color: white;
   position: fixed;
   width: 100%; }
@@ -37,7 +55,6 @@ body {
   padding-bottom: 3px;
   margin-left: 20px;
   text-align: center;
-  font-size: 17px;
   cursor: pointer;
   color: #8e8e8e; }
 
@@ -52,7 +69,6 @@ body {
   padding-bottom: 3px;
   margin-left: 20px;
   text-align: center;
-  font-size: 17px;
   cursor: pointer;
   color: #CB6B93;
   border: solid 1px #CB6B93; }
@@ -90,7 +106,7 @@ body {
   padding-top: 1px;
   margin-top: -1px;
   background-repeat: no-repeat;
-  height: 1230px; }
+  height: 1300px; }
 
 .pair-programming-background {
   background-size: contain;
@@ -100,7 +116,7 @@ body {
 .sign-up-background {
   background-size: cover;
   background-image: url("../../images/sign-up.png");
-  background-position: 0 35%; }
+  background-position: 0 45%; }
 
 .company-thoughtworks-background {
   background-size: cover;
@@ -130,7 +146,8 @@ body {
 
 .section-subsection-left {
   vertical-align: top;
-  width: 40%; }
+  width: 40%;
+  padding-left: 130px; }
 
 .section-subsection-right {
   vertical-align: top;
@@ -165,7 +182,7 @@ body {
   width: 100%; }
 
 .section-entry-icon {
-  width: 37%; }
+  width: 30%; }
 
 .section-entry-icon-caption {
   float: right;
@@ -173,7 +190,7 @@ body {
   text-align: center; }
 
 .section-entry-text {
-  width: 63%;
+  width: 80%;
   padding-left: 40px; }
 
 .section-entry-text-content {
@@ -209,11 +226,11 @@ body {
   background-position: 100% 0;
   background-image: url("../../images/activity-five.png"); }
 
-@media (max-width: 1060px) {
+@media (max-width: 1200px) {
   .section-entry-icon {
     width: 100%;
     display: block;
-    height: 140px; }
+    height: 190px; }
 
   .section-entry-text {
     width: auto;
@@ -224,7 +241,7 @@ body {
   .section-entry-icon-caption {
     float: none;
     width: 5%;
-    height: 140px;
+    height: 190px;
     display: table-cell;
     vertical-align: middle; }
 
@@ -238,16 +255,16 @@ body {
   width: 100%; }
 
 .section-largeEntry-icon {
-  width: 56%; }
+  width: 48%; }
 
 .section-largeEntry-icon-img {
   float: right; }
 
 .section-largeEntry-text {
-  width: 44%;
-  padding-left: 30px; }
+  width: 52%;
+  padding-left: 7%; }
 
-@media (max-width: 1060px) {
+@media (max-width: 1200px) {
   .section-largeEntry-icon {
     display: block;
     width: 100%; }
@@ -265,9 +282,9 @@ body {
 
   .section-largeEntry-text {
     padding-top: 60px; } }
-@media (max-width: 950px) {
+@media (max-width: 1050px) {
   .section-largeEntry-text {
-    padding-top: 90px; } }
+    padding-top: 120px; } }
 .section-text {
   text-align: center; }
 
@@ -277,7 +294,7 @@ body {
 .section-normalGallery {
   padding-left: 15%;
   padding-right: 15%;
-  height: 200px; }
+  height: 230px; }
 
 .section-bigGallery {
   padding-left: 15%;
@@ -385,7 +402,7 @@ body {
   background-size: 60%;
   background-position: 50% 20%; }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .gallery-RESP {
     height: auto; }
 
@@ -394,9 +411,9 @@ body {
 
   .gallery-item-RESP {
     width: 100%;
-    height: 70px;
+    height: 60px;
     display: block;
-    padding-top: 180px;
+    padding-top: 200px;
     vertical-align: inherit; }
 
   .beijing-background-RESP {
@@ -422,11 +439,17 @@ body {
 .section-hugeWhitespace {
   margin-top: 200px; }
 
+.section-veryLargeWhitespace {
+  margin-top: 150px; }
+
 .section-largeWhitespace {
   margin-top: 100px; }
 
 .section-bigWhitespace {
   margin-top: 60px; }
+
+.section-normalWhitespace {
+  margin-top: 50px; }
 
 .section-mediumWhitespace {
   margin-top: 40px; }
@@ -441,12 +464,12 @@ body {
   margin-left: 18%;
   margin-right: 18%; }
 
-@media (max-width: 1060px) {
+@media (max-width: 1200px) {
   .pairProgrammingSection {
-    height: 1100px; } }
-@media (max-width: 1060px) {
+    height: 1200px; } }
+@media (max-width: 1200px) {
   .myActivitySection {
-    height: 1600px; } }
-@media (max-width: 1000px) {
+    height: 1850px; } }
+@media (max-width: 1200px) {
   .missionSection {
     height: 1270px; } }
