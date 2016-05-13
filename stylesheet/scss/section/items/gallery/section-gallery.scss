@@ -31,6 +31,14 @@
   color: white;
 }
 
+.section-gallery-item:hover {
+  border: solid 0.5px white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px white;
+
+  cursor: pointer;
+}
+
 .section-bigGallery-item {
   width: 33%;
 
